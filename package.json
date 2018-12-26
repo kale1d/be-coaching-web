@@ -1,0 +1,15 @@
+{
+  "name": "be-coaching-web",
+  "version": "1.0.0",
+  "description": "package for web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/scss -o src/css"
+  },
+  "author": "Denise Neustadt y Belen Rey",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

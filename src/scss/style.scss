@@ -1,0 +1,114 @@
+@import './stylesheet.scss';
+@import './reset.scss';
+
+
+// color variables
+
+$colorWhite: #ffffff;
+$colorAqua: #29ACB9;
+$colorDarkAqua: #006070;
+
+//global classes
+
+.wrapper{
+	width: 100%;
+	max-width: 1920px;
+	@media screen and (max-width:1680px){
+		max-width: 1366px;
+	}
+}
+.button{
+	width: 100%;
+	max-width: 160px;
+	height: 50px;
+	border-radius: 50px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	border: 1px solid $colorWhite;
+	cursor: pointer;
+	.a--link{
+		color: $colorWhite;
+		font-family: $font-bold;
+		font-size: 17px;
+		&:hover{
+		 color: darken($color: $colorWhite, $amount: 20%)
+		}
+	}
+}
+
+.header{
+	width: 100%;
+	height: 1000px;
+	background-image: url("../img/header-home.jpg");
+	background-position: center;
+	background-size: cover;
+	@media screen and (max-width: 1440px){
+		height: 700px;
+	}
+	.menu{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.logo{
+			width: 70%;
+			.img{
+				max-width: 265px;
+				max-height: 100px;
+			}
+		}
+		.link{
+			width: 15%;
+		}
+	}
+	.text--wrapper{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-flow: column wrap;
+		margin-top: 130px;
+		@media screen and (max-width: 1440px){
+		margin-top: 70px;
+		}
+		.title{
+			width: 73%;
+			color: $colorWhite;
+			font-family: $font-medium;
+			font-size: 71px;
+			line-height: 80px;
+			text-align: left;
+			.wrap--text{
+				display: block;
+			}
+		}
+		.subtitle--wrapper{
+			width: 73%;
+			color: $colorWhite;
+			font-family: $font-medium;
+			margin-top: 100px;
+			@media screen and (max-width: 1440px){
+				margin-top: 70px;
+			}
+			.subtitle--big{
+				font-size: 36px;
+			}
+			.subtitle--small{
+				font-size: 20px;
+				margin-top: 15px;
+			}
+			.button{
+				background-color: $colorWhite;
+				margin-top: 30px;
+				border: none;
+				transition: background-color 0.3s ease-out;
+				&:hover{
+					background-color: darken($color: $colorWhite, $amount: 20%);
+				 }
+				.a--link{
+					color: $colorAqua;
+				}
+			}
+		}
+	}
+}
