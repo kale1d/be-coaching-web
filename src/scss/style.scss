@@ -111,4 +111,20 @@ $colorDarkAqua: #006070;
 			}
 		}
 	}
+	.social--wrapper{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+    .social--list{
+      width: 10%;
+			display: flex;
+			margin-top: 30px;
+      .list--item{
+        width: 25%;
+        .img{
+          max-width: 23px;
+        }
+      }
+    }
+  }
 }

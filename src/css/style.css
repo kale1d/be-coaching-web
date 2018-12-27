@@ -276,3 +276,15 @@ ul {
           background-color: #cccccc; }
         .header .text--wrapper .subtitle--wrapper .button .a--link {
           color: #29ACB9; }
+  .header .social--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    .header .social--wrapper .social--list {
+      width: 10%;
+      display: flex;
+      margin-top: 30px; }
+      .header .social--wrapper .social--list .list--item {
+        width: 25%; }
+        .header .social--wrapper .social--list .list--item .img {
+          max-width: 23px; }
