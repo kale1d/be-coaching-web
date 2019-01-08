@@ -172,6 +172,14 @@ $colorLightGrey: #f2f2f2;
 					transform-origin: 0% 0%;
 					transform: translate(100%, 0);
 					transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+					.list--container {
+						height: 700px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+					}
+
 					.list--item {
 						padding: 10px 0;
 
@@ -184,6 +192,21 @@ $colorLightGrey: #f2f2f2;
 
 						a:hover {
 							color: $colorAqua;
+						}
+
+						a:hover:after {
+							content: '0';
+						}
+					}
+
+					.bg--img{
+						width: 100%;
+						max-width: 100px;
+						position: absolute;
+						bottom: 15px;
+						left: 600px;
+						@media screen and (max-width:1440px){
+							left: 400px;
 						}
 					}
 				}
