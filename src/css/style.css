@@ -229,18 +229,29 @@ ul {
   @media screen and (max-width: 1440px) {
     .header--section {
       height: 700px; } }
-  .header--section .menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .header--section .menu .logo {
-      width: 70%; }
-      .header--section .menu .logo .img {
-        max-width: 265px;
-        max-height: 100px; }
-    .header--section .menu .link {
-      width: 15%; }
+  .header--section .menu--wrapper {
+    width: 98%;
+    height: 90px;
+    max-width: 1920px;
+    position: relative;
+    z-index: 9999;
+    margin: auto; }
+    @media screen and (max-width: 1680px) {
+      .header--section .menu--wrapper {
+        max-width: 1366px; } }
+    .header--section .menu--wrapper .menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed; }
+      .header--section .menu--wrapper .menu .logo {
+        width: 70%; }
+        .header--section .menu--wrapper .menu .logo .img {
+          max-width: 265px;
+          max-height: 100px; }
+      .header--section .menu--wrapper .menu .link {
+        width: 15%; }
   .header--section .text--wrapper {
     width: 100%;
     display: flex;

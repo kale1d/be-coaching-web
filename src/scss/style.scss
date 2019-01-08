@@ -55,22 +55,34 @@ $colorDarkGrey: #757575;
 	@media screen and (max-width: 1440px){
 		height: 700px;
 	}
-	.menu{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		.logo{
-			width: 70%;
-			.img{
-				max-width: 265px;
-				max-height: 100px;
-			}
-		}
-		.link{
-			width: 15%;
-		}
-	}
+  .menu--wrapper{
+    width: 98%;
+    height: 90px;
+    max-width: 1920px;
+    position: relative;
+    z-index: 9999;
+    margin: auto;
+    @media screen and (max-width: 1680px){
+      max-width: 1366px;
+    }
+    .menu{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      .logo{
+        width: 70%;
+        .img{
+          max-width: 265px;
+          max-height: 100px;
+        }
+      }
+      .link{
+        width: 15%;
+      }
+    }
+  }
 	.text--wrapper{
 		width: 100%;
 		display: flex;
