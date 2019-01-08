@@ -101,17 +101,12 @@ $colorDarkGrey: #757575;
     width: 100%;
     position: fixed;
     top: 40px;
-    left: 90vw;
+    left: 95vw;
+    z-index: 99999;
   }
   .hamburger--wrapper{
-    top: 40px;
-    right: 0;
     .hamburger-menu--wrapper{
       display: block;
-      position: relative;
-      top: 0px;
-      left: 70px;
-      z-index: 1;
       user-select: none;
       .input{
         display: block;
@@ -164,12 +159,14 @@ $colorDarkGrey: #757575;
           }
         }
         .hamburger--list{
+          width: 100%;
+          max-width: 100vw;
+          height: 100vh;
           position: absolute;
-          width: 300px;
-          margin: -70px 0 0 -220px;
+          margin: -70px 0 0 -95vw;
           padding: 50px;
           padding-top: 125px;
-          background: #ededed;
+          background: rgba(237,237,237, 0.7);
           list-style-type: none;
           -webkit-font-smoothing: antialiased;              
           transform-origin: 0% 0%;
