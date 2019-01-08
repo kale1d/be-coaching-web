@@ -172,8 +172,30 @@ $colorDarkGrey: #757575;
 					transform: translate(100%, 0);
 					transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 					.list--item{
+						font-family: $font-bold;
+						font-size: 61px;
+						line-height: 70px;
 						padding: 10px 0;
-						font-size: 22px;
+						@media screen and (max-width:1440px){
+							font-size: 50px;
+							line-height: 60px;
+						}
+						.item--link{
+							color: $colorDarkAqua;
+							text-decoration: none;
+							&:hover{
+								color: $colorAqua;
+								&::after{
+									content: '';
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									background: inherit;
+									left: 0;
+									transform-origin: center center;
+									transition: transform .25s ease, top .25s ease, bottom .25s ease;								}
+							}
+						}
 					}
 				}
 			}
