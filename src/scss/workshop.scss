@@ -1,0 +1,220 @@
+@import './stylesheet.scss';
+@import './reset.scss';
+
+
+// color variables
+
+$colorWhite: #ffffff;
+$colorAqua: #29ACB9;
+$colorDarkAqua: #006070;
+$colorDarkGrey: #757575;
+
+//global classes
+
+.wrapper{
+	width: 98%;
+  max-width: 1920px;
+  margin: auto;
+	@media screen and (max-width:1680px){
+		max-width: 1366px;
+	}
+}
+.wrap--text{
+	display: block;
+}
+
+.button{
+	width: 100%;
+	max-width: 160px;
+	height: 50px;
+	border-radius: 50px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	border: 1px solid $colorWhite;
+	cursor: pointer;
+	.a--link{
+		color: $colorWhite;
+		font-family: $font-bold;
+		font-size: 17px;
+		&:hover{
+		 color: darken($color: $colorWhite, $amount: 20%)
+		}
+	}
+}
+
+//WORKSHOPS SECTION
+
+.header--section{
+  width: 100%;
+  background-color: $colorAqua;
+  padding-bottom: 140px;
+  position: relative;
+  .menu--wrapper{
+    width: 98%;
+    height: 90px;
+    max-width: 1920px;
+    position: relative;
+    z-index: 9999;
+    margin: auto;
+    @media screen and (max-width: 1680px){
+      max-width: 1366px;
+    }
+    .menu{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      .logo{
+        width: 70%;
+        .img{
+          max-width: 265px;
+          max-height: 100px;
+        }
+      }
+      .social--wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 40px;
+        .social--list{
+          width: 10%;
+          display: flex;
+          margin-top: 20px;
+          .list--item{
+            width: 25%;
+            .img{
+              max-width: 23px;
+              height: 23px;
+            }
+          }
+        }
+      }
+      .link{
+        width: 15%;
+      }
+    }
+  }
+	.social--wrapper{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		right: 60px;
+		bottom: 30px;
+    .social--list{
+      width: 10%;
+			display: flex;
+			margin-top: 30px;
+      .list--item{
+        width: 25%;
+        .img{
+          max-width: 23px;
+        }
+      }
+    }
+  }
+  .info--wrapper{
+    margin-left: 20%;
+    @media screen and (max-width: 1440px){
+      margin-left: 10%;
+    }
+    .info--title{
+      color: $colorDarkAqua;
+      font-family: $font-bold;
+      font-size: 71px;
+      margin-top: 160px;
+      @media screen and (max-width:1440px){
+        margin-top: 120px;
+      }
+    }
+    .info--subtitle{
+      max-width: 800px;
+      color:$colorWhite;
+      font-family: $font-normal;
+      font-size: 30px;
+      line-height: 41px;
+      margin-top: 65px;
+      .bold{
+        font-family: $font-medium;
+        display: inline;
+      }
+      .thin{
+        font-family: $font-thin;
+      }
+    }
+    .button{
+      max-width: 140px;
+      background-color: $colorWhite;
+      margin-top: 60px;
+      .a--link{
+        color: $colorAqua;
+        font-size: 25px;
+      }
+    }
+  }
+  .bg--img{
+    width: 100%;
+    max-width: 80px;
+    position: absolute;
+    bottom: -3px;
+    right: 350px;
+    @media screen and (max-width:1440px){
+      right: 150px;
+    }
+  }
+}
+
+.footer{
+  background-color: $colorDarkGrey;
+  padding: 210px 0 70px;
+  .footer--list{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    .list--item{
+      width: 20%;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: flex-start;
+      .directions--wrapper{
+        .text--item{
+          color: $colorWhite;
+          font-family: $font-light;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+      .info--wrapper{
+        .text--item{
+          color: $colorWhite;
+          font-family: $font-light;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+      .social--wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        .social--list{
+          width: 50%;
+          display: flex;
+          margin-top: 10px;
+          .list--item{
+            width: 25%;
+            .img{
+              max-width: 23px;
+              height: 23px;
+            }
+          }
+        }
+      }
+      &.first{
+        margin-right: 120px;
+      }
+    }
+  }
+}
