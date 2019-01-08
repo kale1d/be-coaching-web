@@ -217,6 +217,46 @@ $colorDarkGrey: #757575;
       right: 150px;
     }
   }
+
+  .contact--form {
+	  height: 600px;
+	  width: 650px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  margin-top: 50px;
+
+
+	  .input--wrapper {
+		  display: flex;
+		  flex-direction: column;
+
+		  label {
+			  font-family: $font-semibold;
+			  color: $colorDarkAqua;
+			  font-size: 22px;
+			  margin: 0 0 15px 25px;
+		  }
+	  }
+
+	  input {
+		  width: 100%;
+		  height: 60px;
+		  border: 0;
+		  padding-left: 30px;
+	  }
+
+	  textarea {
+		  height: 270px;
+	  }
+
+	  input, textarea {
+		font-family: $font-medium;
+		font-size: 20px;
+		border-radius: 30px;
+		color: $colorDarkGrey;
+	  }
+  }
 }
 
 .img--section{
