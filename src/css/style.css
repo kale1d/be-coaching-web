@@ -527,6 +527,39 @@ ul {
     right: 150px;
   }
 }
+.info--section .contact--form {
+  height: 600px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.info--section .contact--form .input--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.info--section .contact--form .input--wrapper label {
+  font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
+  color: #006070;
+  font-size: 22px;
+  margin: 0 0 15px 25px;
+}
+.info--section .contact--form input {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  padding-left: 30px;
+}
+.info--section .contact--form textarea {
+  height: 270px;
+}
+.info--section .contact--form input, .info--section .contact--form textarea {
+  font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 30px;
+  color: #757575;
+}
 
 .img--section {
   width: 100%;
