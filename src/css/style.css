@@ -252,6 +252,7 @@ ul {
   background-size: cover;
   background-position: bottom;
   position: relative;
+  transform: none;
 }
 @media screen and (max-width: 1440px) {
   .header--section {
@@ -273,6 +274,7 @@ ul {
 }
 .header--section .menu--wrapper .menu {
   width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -420,7 +422,16 @@ ul {
 @media screen and (max-width: 1440px) {
   .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img {
     max-width: 70px;
+    top: 145px;
+  }
+  .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.home {
+    top: 135px;
+  }
+  .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.workshop {
     top: 165px;
+  }
+  .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.contacto {
+    top: 175px;
   }
 }
 .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .bg--img {

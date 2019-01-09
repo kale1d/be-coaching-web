@@ -55,6 +55,7 @@ $colorLightGrey: #f2f2f2;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
+	transform: none;
 	@media screen and (max-width: 1440px){
 		height: 700px;
 	}
@@ -70,6 +71,7 @@ $colorLightGrey: #f2f2f2;
 		}
 		.menu{
 			width: 100%;
+			height: auto;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -220,7 +222,16 @@ $colorLightGrey: #f2f2f2;
 							left: 600px;
 							@media screen and (max-width:1440px){
 								max-width: 70px;
-								top: 165px;
+								top: 145px;
+								&.home{
+									top: 135px;
+								}
+								&.workshop{
+									top: 165px;
+								}
+								&.contacto{
+									top: 175px;
+								}
 							}
 						}
 
