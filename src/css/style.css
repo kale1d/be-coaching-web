@@ -219,6 +219,9 @@ ul {
     .button .a--link:hover {
       color: #cccccc; }
 
+.hidden {
+  visibility: hidden; }
+
 .header--section {
   width: 100%;
   height: 1000px;
@@ -316,35 +319,54 @@ ul {
         margin: -70px 0 0 -95vw;
         padding: 50px;
         padding-top: 125px;
-        background: rgba(237, 237, 237, 0.7);
+        background-color: #f2f2f2;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
         transform: translate(100%, 0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
+          height: 700px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
         .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item {
-          font-family: "MontserratBold", Helvetica, Arial, sans-serif;
-          font-size: 61px;
-          line-height: 70px;
+          width: 100%;
+          max-width: 500px;
+          display: flex;
+          justify-content: space-between;
           padding: 10px 0; }
-          @media screen and (max-width: 1440px) {
-            .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item {
-              font-size: 50px;
-              line-height: 60px; } }
-          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--link {
+          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a, .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
+            font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
             color: #006070;
-            text-decoration: none; }
-            .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--link:hover {
-              color: #29ACB9; }
-              .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--link:hover::after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: inherit;
-                left: 0;
-                transform-origin: center center;
-                transition: transform .25s ease, top .25s ease, bottom .25s ease; }
+            font-size: 60px;
+            line-height: 70px;
+            color: #006070; }
+            @media screen and (max-width: 1440px) {
+              .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a, .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
+                font-size: 50px;
+                line-height: 60px; } }
+          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:hover {
+            color: #29ACB9; }
+          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img {
+            width: 100%;
+            max-width: 90px;
+            position: absolute;
+            top: 130px;
+            left: 600px; }
+            @media screen and (max-width: 1440px) {
+              .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img {
+                max-width: 70px;
+                top: 165px; } }
+        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .bg--img {
+          width: 100%;
+          max-width: 100px;
+          position: absolute;
+          bottom: 15px;
+          left: 600px; }
+          @media screen and (max-width: 1440px) {
+            .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .bg--img {
+              left: 400px; } }
   .header--section .text--wrapper {
     width: 100%;
     display: flex;
@@ -441,6 +463,33 @@ ul {
     @media screen and (max-width: 1440px) {
       .info--section .bg--img {
         right: 150px; } }
+  .info--section .contact--form {
+    height: 600px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px; }
+    .info--section .contact--form .input--wrapper {
+      display: flex;
+      flex-direction: column; }
+      .info--section .contact--form .input--wrapper label {
+        font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
+        color: #006070;
+        font-size: 22px;
+        margin: 0 0 15px 25px; }
+    .info--section .contact--form input {
+      width: 100%;
+      height: 60px;
+      border: 0;
+      padding-left: 30px; }
+    .info--section .contact--form textarea {
+      height: 270px; }
+    .info--section .contact--form input, .info--section .contact--form textarea {
+      font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      border-radius: 30px;
+      color: #757575; }
 
 .img--section {
   width: 100%;
