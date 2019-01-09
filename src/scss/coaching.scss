@@ -228,6 +228,10 @@ $colorDarkGrey: #757575;
   .text--wrapper{
     display: flex;
     justify-content: flex-end;
+    margin-right: 60px;
+    @media screen and (max-width:1440px){
+      margin-right: 10px;
+    }
     .info--text{
       width: 100%;
       max-width: 710px;

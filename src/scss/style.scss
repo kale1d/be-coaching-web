@@ -26,8 +26,8 @@ $colorLightGrey: #f2f2f2;
 
 .button{
 	width: 100%;
-	max-width: 160px;
-	height: 50px;
+	max-width: 130px;
+	height: 40px;
 	border-radius: 50px;
 	align-items: center;
 	display: flex;
@@ -76,9 +76,16 @@ $colorLightGrey: #f2f2f2;
 			position: fixed;
 			.logo{
 				width: 40%;
+				a{
+					width: 100%;
+					display: flex;
+					justify-content: flex-start;
+					text-decoration: none;
+				}
 				.img{
-					max-width: 265px;
-					max-height: 100px;
+					max-width: 300px;
+					max-height: 115px;
+					cursor: pointer;
 				}
 			}
 			.link{
@@ -103,7 +110,7 @@ $colorLightGrey: #f2f2f2;
 	.container{
 		width: 100%;
 		position: fixed;
-		top: 40px;
+		top: 45px;
 		left: 95vw;
 		z-index: 99999;
 		.hamburger--wrapper{
@@ -468,6 +475,13 @@ $colorLightGrey: #f2f2f2;
 .note--section{
 	background-color: $colorDarkAqua;
 	padding: 100px 0;
+	.text--wrapper{
+		width: 80%;
+		margin-left: 13vw;
+		@media screen and (max-width:1440px){
+			margin-left:3vw;
+		}
+	}
 	.first--text{
 		color: $colorAqua;
 		font-family: $font-light;

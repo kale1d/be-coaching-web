@@ -204,8 +204,8 @@ ul {
 
 .button {
   width: 100%;
-  max-width: 160px;
-  height: 50px;
+  max-width: 130px;
+  height: 40px;
   border-radius: 50px;
   align-items: center;
   display: flex;
@@ -250,9 +250,15 @@ ul {
       position: fixed; }
       .header--section .menu--wrapper .menu .logo {
         width: 40%; }
+        .header--section .menu--wrapper .menu .logo a {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          text-decoration: none; }
         .header--section .menu--wrapper .menu .logo .img {
-          max-width: 265px;
-          max-height: 100px; }
+          max-width: 300px;
+          max-height: 115px;
+          cursor: pointer; }
       .header--section .menu--wrapper .menu .link {
         width: 20%; }
       .header--section .menu--wrapper .menu .social--wrapper {
@@ -268,7 +274,7 @@ ul {
   .header--section .container {
     width: 100%;
     position: fixed;
-    top: 40px;
+    top: 45px;
     left: 95vw;
     z-index: 99999; }
     .header--section .container .hamburger--wrapper .hamburger-menu--wrapper {
@@ -559,6 +565,12 @@ ul {
 .note--section {
   background-color: #006070;
   padding: 100px 0; }
+  .note--section .text--wrapper {
+    width: 80%;
+    margin-left: 13vw; }
+    @media screen and (max-width: 1440px) {
+      .note--section .text--wrapper {
+        margin-left: 3vw; } }
   .note--section .first--text {
     color: #29ACB9;
     font-family: "MontserratLight", Helvetica, Arial, sans-serif;
