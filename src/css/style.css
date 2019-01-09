@@ -228,7 +228,8 @@ ul {
   background-image: url("../img/header-home.jpg");
   background-size: cover;
   background-position: bottom;
-  position: relative; }
+  position: relative;
+  transform: none; }
   @media screen and (max-width: 1440px) {
     .header--section {
       height: 700px; } }
@@ -244,6 +245,7 @@ ul {
         max-width: 1366px; } }
     .header--section .menu--wrapper .menu {
       width: 100%;
+      height: auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
