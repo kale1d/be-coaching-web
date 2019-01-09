@@ -1,5 +1,10 @@
-$('.hamburger--list .list--item').mouseover(function(i){
-  $(this).eq(i).children('.item--img').toggleClass('hidden')
-  console.log(  $(this).eq(i).children('.item--img').toggleClass('hidden')
-  )
+$('.hamburger--list .list--item').mouseover(function(){
+  const index = $(this).index()
+  $.each($('.item--img'), function (i, value) {
+    if (index == i) {
+      $(this).removeClass('hidden')
+    } else {
+      $(this).addClass('hidden')
+    }
+  });
 })
