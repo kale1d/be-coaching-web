@@ -1,0 +1,263 @@
+// color variables
+
+$colorWhite: #ffffff;
+$colorAqua: #29ACB9;
+$colorDarkAqua: #006070;
+$colorDarkGrey: #757575;
+$colorLightGrey: #f2f2f2;
+
+//global classes
+
+.wrapper{
+	width: 98%;
+	max-width: 1920px;
+	margin: auto;
+	@media screen and (max-width:1680px){
+		max-width: 1366px;
+	}
+}
+.wrap--text{
+	display: block;
+}
+
+.button{
+	width: 100%;
+	max-width: 130px;
+	height: 40px;
+	border-radius: 50px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	border: 1px solid $colorWhite;
+	cursor: pointer;
+	.a--link{
+		color: $colorWhite;
+		font-family: $font-bold;
+		font-size: 17px;
+		&:hover{
+			color: darken($color: $colorWhite, $amount: 20%)
+		}
+	}
+}
+
+.hidden { visibility:hidden; }
+
+
+.menu--wrapper{
+		width: 98%;
+		height: 90px;
+		max-width: 1920px;
+		position: relative;
+		z-index: 9999;
+		margin: auto;
+		@media screen and (max-width: 1680px){
+			max-width: 1366px;
+		}
+		.menu{
+			width: 100%;
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: fixed;
+			.logo{
+				width: 40%;
+				a{
+					width: 100%;
+					display: flex;
+					justify-content: flex-start;
+					text-decoration: none;
+				}
+				.img{
+					max-width: 300px;
+					max-height: 115px;
+					cursor: pointer;
+				}
+			}
+			.link{
+				width: 20%;
+			}
+			.social--wrapper{
+				width: 20%;
+				.social--list{
+					width: 50%;
+					display: flex;
+					.list--item{
+						width: 25%;
+						.img{
+							max-width: 23px;
+							height: 23px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container{
+		width: 100%;
+		position: fixed;
+		top: 45px;
+		left: 95vw;
+		z-index: 99999;
+		.hamburger--wrapper{
+			.hamburger-menu--wrapper{
+				display: block;
+				user-select: none;
+				.input{
+					display: block;
+					width: 40px;
+					height: 32px;
+					position: absolute;
+					top: -7px;
+					left: -5px;
+					cursor: pointer;
+					opacity: 0;
+					z-index: 2;
+					-webkit-touch-callout: none;
+					&:checked~ span{
+						opacity: 1;
+						transform: rotate(45deg) translate(-2px, -1px);
+						background: $colorAqua;
+					}
+					&:checked~ span:nth-last-child(3)
+					{
+						opacity: 0;
+						transform: rotate(0deg) scale(0.2, 0.2);
+					}
+					&:checked ~ span:nth-last-child(2)
+					{
+						transform: rotate(-45deg) translate(0, -1px);
+					}
+					&:checked ~ ul
+					{
+						transform: none;
+					}
+				}
+				.line{
+					display: block;
+					width: 33px;
+					height: 4px;
+					margin-bottom: 5px;
+					position: relative;
+					background: $colorWhite;
+					border-radius: 3px;
+					z-index: 1;
+					transform-origin: 4px 0px;
+					transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+					background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+					opacity 0.55s ease;
+					&:first-child{
+						transform-origin: 0% 0%;
+					}
+					&:nth-last-child(2){
+						transform-origin: 0% 100%;
+					}
+				}
+				.hamburger--list{
+					width: 100%;
+					max-width: 100vw;
+					height: calc(100vh - 75px);
+					position: fixed;
+					top: 0;
+					left: 0;
+					padding: 50px;
+					padding-top: 125px;
+					display: flex;
+					background-color: $colorLightGrey;
+					list-style-type: none;
+					-webkit-font-smoothing: antialiased;
+					transform-origin: 0% 0%;
+					transform: translate(100%, 0);
+					transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+					.list--container {
+						display: flex;
+						flex-direction: column;
+						justify-content: baseline;
+					}
+
+					.list--item {
+						width: 100%;
+						max-width: 500px;
+						display: flex;
+						justify-content: space-between;
+						padding: 10px 0;
+
+						a, a:visited {
+							font-family: $font-semibold;
+							color: $colorDarkAqua;
+							font-size: 60px;
+							line-height: 70px;
+							color: $colorDarkAqua;
+							@media screen and (max-width:1440px){
+								font-size: 50px;
+								line-height: 60px;
+							}
+						}
+
+						a:hover {
+							color: $colorAqua;
+						}
+						.item--img{
+							width: 100%;
+							max-width: 90px;
+							position: absolute;
+							top: 130px;
+							left: 600px;
+							@media screen and (max-width:1440px){
+								max-width: 70px;
+								top: 145px;
+								&.home{
+									top: 135px;
+								}
+								&.workshop{
+									top: 165px;
+								}
+								&.contacto{
+									top: 175px;
+								}
+							}
+						}
+
+						.bg--img{
+							width: 100%;
+							max-width: 100px;
+							position: fixed;
+							bottom: 15px;
+							left: 600px;
+							@media screen and (max-width:1440px){
+								left: 400px;
+							}
+						}
+					}
+
+					.submenu--wrapper {
+						max-height: 300px;
+						display: flex;
+						flex-direction: column;
+						margin: 100px 0 0 200px;
+						@media screen and (max-width:1440px){
+							margin-left: 250px;
+						}
+
+						a, a:visited {
+							font-family: $font-normal;
+							color: $colorDarkAqua;
+							font-size: 60px;
+							line-height: 70px;
+							color: $colorDarkAqua;
+							@media screen and (max-width:1440px){
+								font-size: 50px;
+								line-height: 60px;
+							}
+						}
+
+						a:hover {
+							color: $colorAqua;
+						}
+
+					}
+				}
+			}
+		}
+	}

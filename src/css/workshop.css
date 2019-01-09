@@ -204,6 +204,208 @@ ul {
 
 .button {
   width: 100%;
+  max-width: 130px;
+  height: 40px;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  cursor: pointer; }
+  .button .a--link {
+    color: #ffffff;
+    font-family: "MontserratBold", Helvetica, Arial, sans-serif;
+    font-size: 17px; }
+    .button .a--link:hover {
+      color: #cccccc; }
+
+.hidden {
+  visibility: hidden; }
+
+.menu--wrapper {
+  width: 98%;
+  height: 90px;
+  max-width: 1920px;
+  position: relative;
+  z-index: 9999;
+  margin: auto; }
+  @media screen and (max-width: 1680px) {
+    .menu--wrapper {
+      max-width: 1366px; } }
+  .menu--wrapper .menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; }
+    .menu--wrapper .menu .logo {
+      width: 40%; }
+      .menu--wrapper .menu .logo a {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none; }
+      .menu--wrapper .menu .logo .img {
+        max-width: 300px;
+        max-height: 115px;
+        cursor: pointer; }
+    .menu--wrapper .menu .link {
+      width: 20%; }
+    .menu--wrapper .menu .social--wrapper {
+      width: 20%; }
+      .menu--wrapper .menu .social--wrapper .social--list {
+        width: 50%;
+        display: flex; }
+        .menu--wrapper .menu .social--wrapper .social--list .list--item {
+          width: 25%; }
+          .menu--wrapper .menu .social--wrapper .social--list .list--item .img {
+            max-width: 23px;
+            height: 23px; }
+
+.container {
+  width: 100%;
+  position: fixed;
+  top: 45px;
+  left: 95vw;
+  z-index: 99999; }
+  .container .hamburger--wrapper .hamburger-menu--wrapper {
+    display: block;
+    user-select: none; }
+    .container .hamburger--wrapper .hamburger-menu--wrapper .input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none; }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #29ACB9; }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2); }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px); }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ ul {
+        transform: none; }
+    .container .hamburger--wrapper .hamburger-menu--wrapper .line {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #ffffff;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .line:first-child {
+        transform-origin: 0% 0%; }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .line:nth-last-child(2) {
+        transform-origin: 0% 100%; }
+    .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list {
+      width: 100%;
+      max-width: 100vw;
+      height: calc(100vh - 75px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 50px;
+      padding-top: 125px;
+      display: flex;
+      background-color: #f2f2f2;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline; }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0; }
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
+          font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
+          color: #006070;
+          font-size: 60px;
+          line-height: 70px;
+          color: #006070; }
+          @media screen and (max-width: 1440px) {
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
+              font-size: 50px;
+              line-height: 60px; } }
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:hover {
+          color: #29ACB9; }
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img {
+          width: 100%;
+          max-width: 90px;
+          position: absolute;
+          top: 130px;
+          left: 600px; }
+          @media screen and (max-width: 1440px) {
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img {
+              max-width: 70px;
+              top: 145px; }
+              .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.home {
+                top: 135px; }
+              .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.workshop {
+                top: 165px; }
+              .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.contacto {
+                top: 175px; } }
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .bg--img {
+          width: 100%;
+          max-width: 100px;
+          position: fixed;
+          bottom: 15px;
+          left: 600px; }
+          @media screen and (max-width: 1440px) {
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .bg--img {
+              left: 400px; } }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper {
+        max-height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 0 200px; }
+        @media screen and (max-width: 1440px) {
+          .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper {
+            margin-left: 250px; } }
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
+          font-family: "Montserrat", Helvetica, Arial, sans-serif;
+          color: #006070;
+          font-size: 60px;
+          line-height: 70px;
+          color: #006070; }
+          @media screen and (max-width: 1440px) {
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
+              font-size: 50px;
+              line-height: 60px; } }
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:hover {
+          color: #29ACB9; }
+
+.wrapper {
+  width: 98%;
+  max-width: 1920px;
+  margin: auto; }
+  @media screen and (max-width: 1680px) {
+    .wrapper {
+      max-width: 1366px; } }
+
+.wrap--text {
+  display: block; }
+
+.button {
+  width: 100%;
   max-width: 160px;
   height: 50px;
   border-radius: 50px;
@@ -224,102 +426,6 @@ ul {
   background-color: #29ACB9;
   padding-bottom: 140px;
   position: relative; }
-  .header--section .menu--wrapper {
-    width: 98%;
-    height: 90px;
-    max-width: 1920px;
-    position: relative;
-    z-index: 9999;
-    margin: auto; }
-    @media screen and (max-width: 1680px) {
-      .header--section .menu--wrapper {
-        max-width: 1366px; } }
-    .header--section .menu--wrapper .menu {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed; }
-      .header--section .menu--wrapper .menu .logo {
-        width: 40%; }
-        .header--section .menu--wrapper .menu .logo .img {
-          max-width: 265px;
-          max-height: 100px; }
-      .header--section .menu--wrapper .menu .link {
-        width: 20%; }
-      .header--section .menu--wrapper .menu .social--wrapper {
-        width: 20%; }
-        .header--section .menu--wrapper .menu .social--wrapper .social--list {
-          width: 50%;
-          display: flex; }
-          .header--section .menu--wrapper .menu .social--wrapper .social--list .list--item {
-            width: 25%; }
-            .header--section .menu--wrapper .menu .social--wrapper .social--list .list--item .img {
-              max-width: 23px;
-              height: 23px; }
-  .header--section .container {
-    width: 100%;
-    position: fixed;
-    top: 40px;
-    left: 95vw;
-    z-index: 99999; }
-    .header--section .container .hamburger--wrapper .hamburger-menu--wrapper {
-      display: block;
-      user-select: none; }
-      .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .input {
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0;
-        z-index: 2;
-        -webkit-touch-callout: none; }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span {
-          opacity: 1;
-          transform: rotate(45deg) translate(-2px, -1px);
-          background: #29ACB9; }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span:nth-last-child(3) {
-          opacity: 0;
-          transform: rotate(0deg) scale(0.2, 0.2); }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span:nth-last-child(2) {
-          transform: rotate(-45deg) translate(0, -1px); }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ ul {
-          transform: none; }
-      .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .line {
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-        background: #ffffff;
-        border-radius: 3px;
-        z-index: 1;
-        transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .line:first-child {
-          transform-origin: 0% 0%; }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .line:nth-last-child(2) {
-          transform-origin: 0% 100%; }
-      .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list {
-        width: 100%;
-        max-width: 100vw;
-        height: 100vh;
-        position: absolute;
-        margin: -70px 0 0 -95vw;
-        padding: 50px;
-        padding-top: 125px;
-        background: rgba(237, 237, 237, 0.7);
-        list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        transform-origin: 0% 0%;
-        transform: translate(100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item {
-          padding: 10px 0;
-          font-size: 22px; }
   .header--section .info--wrapper {
     margin-left: 20%; }
     @media screen and (max-width: 1440px) {

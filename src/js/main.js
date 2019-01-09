@@ -19,3 +19,8 @@ $('.hamburger--list .list--item').mouseover(function(){
     }
   });
 })
+$('.hamburger-menu--wrapper .input').click(function(){
+  if($(this).is(':checked')){
+    $('.item--img').addClass('hidden');
+  }
+})
