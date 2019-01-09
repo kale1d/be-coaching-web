@@ -322,11 +322,13 @@ ul {
       .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list {
         width: 100%;
         max-width: 100vw;
-        height: 100vh;
-        position: absolute;
-        margin: -70px 0 0 -95vw;
+        height: calc(100vh - 75px);
+        position: fixed;
+        top: 0;
+        left: 0;
         padding: 50px;
         padding-top: 125px;
+        display: flex;
         background-color: #f2f2f2;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
@@ -334,10 +336,9 @@ ul {
         transform: translate(100%, 0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
         .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
-          height: 700px;
           display: flex;
           flex-direction: column;
-          justify-content: space-between; }
+          justify-content: baseline; }
         .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item {
           width: 100%;
           max-width: 500px;
@@ -372,15 +373,35 @@ ul {
                   top: 165px; }
                 .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .item--img.contacto {
                   top: 175px; } }
-        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .bg--img {
-          width: 100%;
-          max-width: 100px;
-          position: absolute;
-          bottom: 15px;
-          left: 600px; }
+          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .bg--img {
+            width: 100%;
+            max-width: 100px;
+            position: fixed;
+            bottom: 15px;
+            left: 600px; }
+            @media screen and (max-width: 1440px) {
+              .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item .bg--img {
+                left: 400px; } }
+        .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper {
+          max-height: 300px;
+          display: flex;
+          flex-direction: column;
+          margin: 100px 0 0 200px; }
           @media screen and (max-width: 1440px) {
-            .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .bg--img {
-              left: 400px; } }
+            .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper {
+              margin-left: 250px; } }
+          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a, .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            color: #006070;
+            font-size: 60px;
+            line-height: 70px;
+            color: #006070; }
+            @media screen and (max-width: 1440px) {
+              .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a, .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
+                font-size: 50px;
+                line-height: 60px; } }
+          .header--section .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:hover {
+            color: #29ACB9; }
   .header--section .text--wrapper {
     width: 100%;
     display: flex;
@@ -477,33 +498,6 @@ ul {
     @media screen and (max-width: 1440px) {
       .info--section .bg--img {
         right: 150px; } }
-  .info--section .contact--form {
-    height: 600px;
-    width: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px; }
-    .info--section .contact--form .input--wrapper {
-      display: flex;
-      flex-direction: column; }
-      .info--section .contact--form .input--wrapper label {
-        font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
-        color: #006070;
-        font-size: 22px;
-        margin: 0 0 15px 25px; }
-    .info--section .contact--form input {
-      width: 100%;
-      height: 60px;
-      border: 0;
-      padding-left: 30px; }
-    .info--section .contact--form textarea {
-      height: 270px; }
-    .info--section .contact--form input, .info--section .contact--form textarea {
-      font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
-      font-size: 20px;
-      border-radius: 30px;
-      color: #757575; }
 
 .img--section {
   width: 100%;

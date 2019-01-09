@@ -172,11 +172,13 @@ $colorLightGrey: #f2f2f2;
 				.hamburger--list{
 					width: 100%;
 					max-width: 100vw;
-					height: 100vh;
-					position: absolute;
-					margin: -70px 0 0 -95vw;
+					height: calc(100vh - 75px);
+					position: fixed;
+					top: 0;
+					left: 0;
 					padding: 50px;
 					padding-top: 125px;
+					display: flex;
 					background-color: $colorLightGrey;
 					list-style-type: none;
 					-webkit-font-smoothing: antialiased;
@@ -185,10 +187,9 @@ $colorLightGrey: #f2f2f2;
 					transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
 					.list--container {
-						height: 700px;
 						display: flex;
 						flex-direction: column;
-						justify-content: space-between;
+						justify-content: baseline;
 					}
 
 					.list--item {
@@ -233,17 +234,44 @@ $colorLightGrey: #f2f2f2;
 								}
 							}
 						}
+
+						.bg--img{
+							width: 100%;
+							max-width: 100px;
+							position: fixed;
+							bottom: 15px;
+							left: 600px;
+							@media screen and (max-width:1440px){
+								left: 400px;
+							}
+						}
 					}
 
-					.bg--img{
-						width: 100%;
-						max-width: 100px;
-						position: absolute;
-						bottom: 15px;
-						left: 600px;
+					.submenu--wrapper {
+						max-height: 300px;
+						display: flex;
+						flex-direction: column;
+						margin: 100px 0 0 200px;
 						@media screen and (max-width:1440px){
-							left: 400px;
+							margin-left: 250px;
 						}
+
+						a, a:visited {
+							font-family: $font-normal;
+							color: $colorDarkAqua;
+							font-size: 60px;
+							line-height: 70px;
+							color: $colorDarkAqua;
+							@media screen and (max-width:1440px){
+								font-size: 50px;
+								line-height: 60px;
+							}
+						}
+
+						a:hover {
+							color: $colorAqua;
+						}
+
 					}
 				}
 			}
@@ -363,46 +391,6 @@ $colorLightGrey: #f2f2f2;
     @media screen and (max-width:1440px){
       right: 150px;
     }
-  }
-
-  .contact--form {
-	  height: 600px;
-	  width: 650px;
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
-	  margin-top: 50px;
-
-
-	  .input--wrapper {
-		  display: flex;
-		  flex-direction: column;
-
-		  label {
-			  font-family: $font-semibold;
-			  color: $colorDarkAqua;
-			  font-size: 22px;
-			  margin: 0 0 15px 25px;
-		  }
-	  }
-
-	  input {
-		  width: 100%;
-		  height: 60px;
-		  border: 0;
-		  padding-left: 30px;
-	  }
-
-	  textarea {
-		  height: 270px;
-	  }
-
-	  input, textarea {
-		font-family: $font-medium;
-		font-size: 20px;
-		border-radius: 30px;
-		color: $colorDarkGrey;
-	  }
   }
 }
 
