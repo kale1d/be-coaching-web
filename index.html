@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Be Coaching | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./src/css/style.css" />
 </head>
 
@@ -75,7 +75,7 @@
     </div>
 
     <div class="wrapper">
-      <div data-aos="fade-in">
+      <div class="animated fadeInUp slow">
         <div class="text--wrapper">
           <h1 class="title">Personal,<span class="wrap--text">Organizacional</span> <span class="wrap--text"> y
               Ejecutivo.</span></h1>
@@ -93,7 +93,7 @@
 
 
   <section class="info--section">
-    <div data-aos="slide-right">
+    <div class="animated slow" id="info--section">
       <div class="wrapper">
         <div class="info--wrapper">
           <h2 class="info--title">El impulso que buscás</h2>
@@ -150,20 +150,19 @@
     </div>
   </section>
 
-  <div data-aos="slide-right" data-aos-easing="ease-in-cubic" data-aos-delay="50" data-aos-duration="1000"
-    data-aos-anchor-placement="top-center">
+  <div class="animated slow" id="img-section">
     <section class="img--section">
     </section>
   </div>
 
   <section class="coaching--section">
     <div class="wrapper">
-      <div data-aos="zoom-in" data-aos-easing="ease-in-cubic" data-aos-delay="100" data-aos-anchor-placement="top-center">
+      <div class="animated slow" id="coaching-title" >
         <h2 class="coaching--title">¿Que es el <span class="color">Coaching</span>?</h2>
       </div>
       <ul class="values--list">
         <li class="list--item">
-          <div data-aos="zoom-out" data-aos-easing="ease-in-cubic" data-aos-delay="100" data-aos-anchor-placement="top-center">
+          <div class="animated fast" id="left-item">
             <div class="item--wrapper">
               <img src="./src/img/coaching/metodo.svg" alt="" class="img--item">
               <h3 class="item--title">Método</h3>
@@ -173,7 +172,7 @@
           </div>
         </li>
         <li class="list--item">
-          <div data-aos="zoom-out" data-aos-easing="ease-in-cubic" data-aos-delay="150" data-aos-anchor-placement="top-center">
+          <div class="animated fast" id="center-item">
             <div class="item--wrapper second">
               <img src="./src/img/coaching/objetivo.svg" alt="" class="img--item obj">
               <h3 class="item--title">Objetivo</h3>
@@ -183,7 +182,7 @@
           </div>
         </li>
         <li class="list--item">
-          <div data-aos="zoom-out" data-aos-easing="ease-in-cubic" data-aos-delay="200" data-aos-anchor-placement="top-center">
+          <div class="animated fast" id="right-item">
             <div class="item--wrapper">
               <img src="./src/img/coaching/design.svg" alt="" class="img--item dsg">
               <h3 class="item--title">Método</h3>
@@ -197,7 +196,7 @@
   </section>
 
   <section class="note--section">
-    <div data-aos="flip-down" data-aos-easing="ease-in-back" data-aos-duration="500">
+    <div class="animated slow" id="note-section">
       <div class="wrapper">
         <div class="text--wrapper">
           <p class="first--text">Coaching es</p>
@@ -236,7 +235,7 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="./src/js/main.js"></script>
 
 </html>
