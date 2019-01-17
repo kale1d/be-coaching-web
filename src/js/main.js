@@ -28,12 +28,12 @@ $(document).ready(function(){
 
   // hide our element on page load
   $('#info--section').css('opacity', 0);
+  $('#coaching-title').css('opacity', 0);
  
   $('#info--section').waypoint(function() {
       $('#info--section').addClass('fadeInUp');
   }, { offset: '70%' });
 
-  $('#coaching-title').css('opacity', 0);
  
   $('#coaching-title').waypoint(function() {
       $('#coaching-title').addClass('fadeInUp');
