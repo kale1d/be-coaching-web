@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Be Coaching | Coaching</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./src/css/coaching.css" />
 </head>
 
@@ -73,10 +74,10 @@
       </menu>
     </div>
     <div class="wrapper" id="personal">
-      <div class="dot--wrapper">
+      <div class="animated bounce slow dot--wrapper">
         <span class="dot"></span>
       </div>
-      <div class="logo--wrapper">
+      <div class="animated fadeInUp logo--wrapper">
         <img src="./src/img/section-2/be-personal.svg" alt="" class="wrapper">
       </div>
     </div>
@@ -85,7 +86,7 @@
   <section class="info--section">
     <div class="wrapper">
       <div class="text--wrapper">
-        <p class="info--text">
+        <p class="info--text animated fadeIn delay-1s" id="info-text">
           <span class="bold">Acompañamos</span> a nuestro cliente de una manera profesional en sesiones de coaching,
           <span class="bold">focalizando en el objetivo a desarrollar</span> o en el obstáculo a superar, ayudándolo a
           hacer consciente aquello que no había visto y diseñando las acciones para su logro.
@@ -95,12 +96,12 @@
     </div>
   </section>
 
-  <section id="organizacional" class="organization--section">
+  <section id="organizacional" class="organization--section animated fadeIn slow">
     <div class="wrapper">
-      <div class="dot--wrapper">
+      <div class="dot--wrapper animated slow" id="dot">
         <span class="dot"></span>
       </div>
-      <div class="logo--wrapper">
+      <div class="logo--wrapper animated fast" id="logo">
         <img src="./src/img/section-2/be-organization.svg" alt="" class="wrapper">
       </div>
     </div>
@@ -108,7 +109,7 @@
 
   <section class="info--section organization">
     <div class="wrapper">
-      <div class="text--wrapper">
+      <div class="text--wrapper animated fast" id="text-org">
         <p class="info--text">
           <span class="bold">Nos dedicamos a observar</span> de manera activa la organización, analizando su
           comportamiento mediante un diagnostico para luego
@@ -122,10 +123,10 @@
 
   <section id="ejecutivo" class="executive--section">
     <div class="wrapper">
-      <div class="dot--wrapper">
+      <div class="dot--wrapper animated slow" id="dot-ex">
         <span class="dot"></span>
       </div>
-      <div class="logo--wrapper">
+      <div class="logo--wrapper animated fast" id="logo-ex">
         <img src="./src/img/section-2/be-ejecutivo.svg" alt="" class="wrapper">
       </div>
     </div>
@@ -133,7 +134,7 @@
 
   <section class="info--section executive">
     <div class="wrapper">
-      <div class="text--wrapper">
+      <div class="text--wrapper animated fast" id="text-ex">
         <p class="info--text">
           En este proceso nos enfocamos en <span class="bold">lograr el desarrollo personal y profesional</span>
           del cliente de manera tal que cumpla con la necesidad de la empresa solicitante.
@@ -171,7 +172,7 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="./src/js/main.js"></script>
 
 </html>
