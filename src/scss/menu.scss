@@ -23,26 +23,6 @@ $colorLightGrey: #f2f2f2;
 	display: block;
 }
 
-.button{
-	width: 100%;
-	max-width: 130px;
-	height: 40px;
-	border-radius: 50px;
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	border: 1px solid $colorWhite;
-	cursor: pointer;
-	.a--link{
-		color: $colorWhite;
-		font-family: $font-bold;
-		font-size: 17px;
-		&:hover{
-			color: darken($color: $colorWhite, $amount: 20%)
-		}
-	}
-}
-
 .hidden { visibility:hidden; }
 
 
@@ -62,6 +42,7 @@ $colorLightGrey: #f2f2f2;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			margin-top: -10px;
 			position: fixed;
 			.logo{
 				width: 40%;
@@ -72,9 +53,28 @@ $colorLightGrey: #f2f2f2;
 					text-decoration: none;
 				}
 				.img{
-					max-width: 300px;
-					max-height: 115px;
+					max-width: 350px;
+					max-height: 135px;
 					cursor: pointer;
+				}
+			}
+			.button{
+				width: 100%;
+				max-width: 130px;
+				height: 40px;
+				border-radius: 50px;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				border: 1px solid $colorWhite;
+				cursor: pointer;
+				.a--link{
+					color: $colorWhite;
+					font-family: $font-bold;
+					font-size: 17px;
+					&:hover{
+						color: darken($color: $colorWhite, $amount: 20%)
+					}
 				}
 			}
 			.link{

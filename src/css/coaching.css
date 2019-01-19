@@ -395,23 +395,6 @@ ul {
 .wrap--text {
   display: block; }
 
-.button {
-  width: 100%;
-  max-width: 130px;
-  height: 40px;
-  border-radius: 50px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #ffffff;
-  cursor: pointer; }
-  .button .a--link {
-    color: #ffffff;
-    font-family: "MontserratBold", Helvetica, Arial, sans-serif;
-    font-size: 17px; }
-    .button .a--link:hover {
-      color: #cccccc; }
-
 .hidden {
   visibility: hidden; }
 
@@ -431,6 +414,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -10px;
     position: fixed; }
     .menu--wrapper .menu .logo {
       width: 40%; }
@@ -440,9 +424,25 @@ ul {
         justify-content: flex-start;
         text-decoration: none; }
       .menu--wrapper .menu .logo .img {
-        max-width: 300px;
-        max-height: 115px;
+        max-width: 350px;
+        max-height: 135px;
         cursor: pointer; }
+    .menu--wrapper .menu .button {
+      width: 100%;
+      max-width: 130px;
+      height: 40px;
+      border-radius: 50px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      cursor: pointer; }
+      .menu--wrapper .menu .button .a--link {
+        color: #ffffff;
+        font-family: "MontserratBold", Helvetica, Arial, sans-serif;
+        font-size: 17px; }
+        .menu--wrapper .menu .button .a--link:hover {
+          color: #cccccc; }
     .menu--wrapper .menu .link {
       width: 20%; }
     .menu--wrapper .menu .social--wrapper {

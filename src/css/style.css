@@ -395,23 +395,6 @@ ul {
 .wrap--text {
   display: block; }
 
-.button {
-  width: 100%;
-  max-width: 130px;
-  height: 40px;
-  border-radius: 50px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #ffffff;
-  cursor: pointer; }
-  .button .a--link {
-    color: #ffffff;
-    font-family: "MontserratBold", Helvetica, Arial, sans-serif;
-    font-size: 17px; }
-    .button .a--link:hover {
-      color: #cccccc; }
-
 .hidden {
   visibility: hidden; }
 
@@ -431,6 +414,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -10px;
     position: fixed; }
     .menu--wrapper .menu .logo {
       width: 40%; }
@@ -440,9 +424,25 @@ ul {
         justify-content: flex-start;
         text-decoration: none; }
       .menu--wrapper .menu .logo .img {
-        max-width: 300px;
-        max-height: 115px;
+        max-width: 350px;
+        max-height: 135px;
         cursor: pointer; }
+    .menu--wrapper .menu .button {
+      width: 100%;
+      max-width: 130px;
+      height: 40px;
+      border-radius: 50px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #ffffff;
+      cursor: pointer; }
+      .menu--wrapper .menu .button .a--link {
+        color: #ffffff;
+        font-family: "MontserratBold", Helvetica, Arial, sans-serif;
+        font-size: 17px; }
+        .menu--wrapper .menu .button .a--link:hover {
+          color: #cccccc; }
     .menu--wrapper .menu .link {
       width: 20%; }
     .menu--wrapper .menu .social--wrapper {
@@ -597,7 +597,7 @@ ul {
 .wrap--text {
   display: block; }
 
-.button {
+.button-home {
   width: 100%;
   max-width: 130px;
   height: 40px;
@@ -607,11 +607,11 @@ ul {
   justify-content: center;
   border: 1px solid #ffffff;
   cursor: pointer; }
-  .button .a--link {
+  .button-home .a--link {
     color: #ffffff;
     font-family: "MontserratBold", Helvetica, Arial, sans-serif;
     font-size: 17px; }
-    .button .a--link:hover {
+    .button-home .a--link:hover {
       color: #cccccc; }
 
 .hidden {
@@ -657,14 +657,14 @@ ul {
       .header--section .text--wrapper .subtitle--wrapper .subtitle--small {
         font-size: 20px;
         margin-top: 15px; }
-      .header--section .text--wrapper .subtitle--wrapper .button {
+      .header--section .text--wrapper .subtitle--wrapper .button-home {
         background-color: #ffffff;
         margin-top: 30px;
         border: none;
         transition: background-color 0.3s ease-out; }
-        .header--section .text--wrapper .subtitle--wrapper .button:hover {
+        .header--section .text--wrapper .subtitle--wrapper .button-home:hover {
           background-color: #cccccc; }
-        .header--section .text--wrapper .subtitle--wrapper .button .a--link {
+        .header--section .text--wrapper .subtitle--wrapper .button-home .a--link {
           color: #29ACB9; }
 
 .info--section {
