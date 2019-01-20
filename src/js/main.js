@@ -11,10 +11,10 @@ $('.hamburger--list .list--item').mouseover(function(){
   }
   $.each($('.item--img'), function (i, value) {
     if (index == i) {
-      $(this).removeClass('hidden');
+      $(this).removeClass('hidden').addClass('animated slideInUp');
     } 
     else {
-      $(this).addClass('hidden');
+      $(this).addClass('hidden').removeClass('animated slideInUp');
     }
   });
 })
