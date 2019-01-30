@@ -116,17 +116,17 @@ $colorLightGrey: #f2f2f2;
         opacity: 0;
         z-index: 2;
         -webkit-touch-callout: none;
-        &:checked~span {
+        &:checked~.line--wrapper span {
           opacity: 1;
-          transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg);
           background: $colorAqua;
         }
-        &:checked~span:nth-last-child(3) {
+        &:checked~.line--wrapper span:nth-last-child(2) {
           opacity: 0;
-          transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.3, 0.3);
         }
-        &:checked~span:nth-last-child(2) {
-          transform: rotate(-45deg) translate(0, -1px);
+        &:checked~.line--wrapper span:nth-last-child(1) {
+          transform: rotate(-45deg) translate(0, -5px);
         }
         &:checked~ul {
           transform: none;
