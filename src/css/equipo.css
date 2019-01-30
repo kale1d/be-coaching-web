@@ -451,7 +451,7 @@ ul {
         width: 50%;
         display: flex; }
         .menu--wrapper .menu .social--wrapper .social--list .list--item {
-          width: 25%; }
+          width: 20%; }
           .menu--wrapper .menu .social--wrapper .social--list .list--item .img {
             max-width: 23px;
             height: 23px; }
@@ -459,7 +459,7 @@ ul {
 .container {
   width: 100%;
   position: fixed;
-  top: 45px;
+  top: 25px;
   left: 95vw;
   z-index: 99999; }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
@@ -487,13 +487,25 @@ ul {
         transform: rotate(-45deg) translate(0, -1px); }
       .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ ul {
         transform: none; }
+    .container .hamburger--wrapper .hamburger-menu--wrapper .line--wrapper {
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border-radius: 30px;
+      cursor: pointer; }
     .container .hamburger--wrapper .hamburger-menu--wrapper .line {
       display: block;
       width: 33px;
       height: 4px;
       margin-bottom: 5px;
       position: relative;
-      background: #ffffff;
+      background: #29ACB9;
       border-radius: 3px;
       z-index: 1;
       transform-origin: 4px 0px;
@@ -528,14 +540,16 @@ ul {
         display: flex;
         justify-content: space-between;
         padding: 10px 0; }
-        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a,
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
           font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
           color: #006070;
           font-size: 60px;
           line-height: 70px;
           color: #006070; }
           @media screen and (max-width: 1440px) {
-            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a,
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
               font-size: 50px;
               line-height: 60px; } }
         .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:hover {
@@ -573,14 +587,16 @@ ul {
         @media screen and (max-width: 1440px) {
           .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper {
             margin-left: 250px; } }
-        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a,
+        .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
           font-family: "Montserrat", Helvetica, Arial, sans-serif;
           color: #006070;
           font-size: 60px;
           line-height: 70px;
           color: #006070; }
           @media screen and (max-width: 1440px) {
-            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a, .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a,
+            .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:visited {
               font-size: 50px;
               line-height: 60px; } }
         .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .submenu--wrapper a:hover {
@@ -677,6 +693,11 @@ ul {
         text-align: left;
         margin-top: 50px;
         margin-left: 15%; }
+        .team--section .team--list .list--item .text--wrapper .list--name {
+          color: #ffffff;
+          font-family: "MontserratBold", Helvetica, Arial, sans-serif;
+          font-size: 31px;
+          margin-bottom: 10px; }
         .team--section .team--list .list--item .text--wrapper .list--title {
           color: #006070;
           font-family: "MontserratSemiBold", Helvetica, Arial, sans-serif;
@@ -721,7 +742,7 @@ ul {
           display: flex;
           margin-top: 10px; }
           .footer .footer--list .list--item .social--wrapper .social--list .list--item {
-            width: 25%; }
+            width: 20%; }
             .footer .footer--list .list--item .social--wrapper .social--list .list--item .img {
               max-width: 23px;
               height: 23px; }

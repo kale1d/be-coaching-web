@@ -117,6 +117,12 @@ $colorDarkGrey: #757575;
         text-align: left;
         margin-top: 50px;
         margin-left: 15%;
+        .list--name{
+          color: $colorWhite;
+          font-family: $font-bold;
+          font-size: 31px;
+          margin-bottom: 10px;
+        }
         .list--title{
           color: $colorDarkAqua;
           font-family: $font-semibold;
@@ -172,7 +178,7 @@ $colorDarkGrey: #757575;
           display: flex;
           margin-top: 10px;
           .list--item{
-            width: 25%;
+            width: 20%;
             .img{
               max-width: 23px;
               height: 23px;
