@@ -360,17 +360,17 @@ ul {
 /* line 119, ../scss/menu.scss */
 .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ .line--wrapper span {
   opacity: 1;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(-2px, 0px);
   background: #29ACB9;
 }
 /* line 124, ../scss/menu.scss */
 .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ .line--wrapper span:nth-last-child(2) {
   opacity: 0;
-  transform: rotate(0deg) scale(0.3, 0.3);
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 /* line 128, ../scss/menu.scss */
 .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ .line--wrapper span:nth-last-child(1) {
-  transform: rotate(-45deg) translate(0, -5px);
+  transform: rotate(-45deg) translate(0, -8px);
 }
 /* line 131, ../scss/menu.scss */
 .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ ul {
