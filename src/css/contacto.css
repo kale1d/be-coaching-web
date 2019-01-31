@@ -476,15 +476,15 @@ ul {
       opacity: 0;
       z-index: 2;
       -webkit-touch-callout: none; }
-      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span {
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ .line--wrapper span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-2px, 0px);
         background: #29ACB9; }
-      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span:nth-last-child(3) {
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ .line--wrapper span:nth-last-child(2) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2); }
-      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px); }
+      .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ .line--wrapper span:nth-last-child(1) {
+        transform: rotate(-45deg) translate(0, -8px); }
       .container .hamburger--wrapper .hamburger-menu--wrapper .input:checked ~ ul {
         transform: none; }
     .container .hamburger--wrapper .hamburger-menu--wrapper .line--wrapper {
