@@ -1,16 +1,17 @@
+const mobile768 = window.matchMedia("(max-width: 768px)");
+
 $('.hamburger--list .submenu--wrapper').hide();
-
-
 $('.hamburger--list .list--item').mouseover(function(){
   const index = $(this).index();
-  if ($(this).hasClass('coaching')) {
-    console.log('yaaay')
+  //we need to check for the media query to avoid overridin the hide for lower resolutions
+  if ($(this).hasClass('coaching') && mobile768.matches != true) {
       $('.hamburger--list .submenu--wrapper').show();
   } else {
     $('.hamburger--list .submenu--wrapper').hide();
+    console.log('hola');
   }
   $.each($('.item--img'), function (i, value) {
-    if (index == i) {
+    if (index == i && mobile768.matches != true) {
       $(this).removeClass('hidden').addClass('animated fadeIn');
     } 
     else {
