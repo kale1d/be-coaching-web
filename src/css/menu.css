@@ -417,10 +417,10 @@ ul {
 .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 @media screen and (max-width: 769px) {
   .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
+    justify-content: space-around;
     max-height: 90%;
   }
 }
