@@ -9,6 +9,8 @@ $colorAqua: #29ACB9;
 $colorDarkAqua: #006070;
 $colorDarkGrey: #757575;
 
+$mobile-768: 768px;
+
 //global classes
 
 .wrapper{
@@ -55,12 +57,21 @@ $colorDarkGrey: #757575;
 	@media screen and (max-width: 1440px){
 		height: 500px;
   }
+  @media screen and (max-width: $mobile-768) {
+    height: 730px;
+    background-image: url('../img/section-2/personal-bg-768.jpg');
+    background-position: top;
+  }
   .wrapper{
     height: 950px;
     display: flex;
     justify-content: flex-end;
     @media screen and (max-width:1440px){
       height: 630px;
+    }
+    @media screen and (max-width: $mobile-768) {
+      width: 95%;
+      height: 960px;
     }
     .dot--wrapper{
       width: 100px;
@@ -83,6 +94,12 @@ $colorDarkGrey: #757575;
         }
         @media screen and (max-width:1280px){
           left: 90px;
+        }
+        @media screen and (max-width: $mobile-768) {
+          width: 80px;
+          height: 80px;
+          top: 160px;
+          left: 290px;
         }
       }
     }
@@ -162,12 +179,20 @@ $colorDarkGrey: #757575;
 	@media screen and (max-width: 1440px){
 		height: 500px;
   }
+  @media screen and (max-width: $mobile-768) {
+    height: 730px;
+    background-image: url('../img/section-2/organization-bg-768.jpg');
+  }
   .wrapper{
     height: 1100px;
     display: flex;
     justify-content: flex-end;
     @media screen and (max-width:1440px){
       height: 830px;
+    }
+    @media screen and (max-width: $mobile-768) {
+      width: 95%;
+      height: 1200px;
     }
     .dot--wrapper{
       width: 100px;
@@ -191,6 +216,12 @@ $colorDarkGrey: #757575;
         }
         @media screen and (max-width:1280px){
           left: 280px;
+        }
+        @media screen and (max-width: $mobile-768) {
+          width: 80px;
+          height: 80px;
+          top: 200px;
+          left: 460px;
         }
       }
     }
@@ -216,12 +247,21 @@ $colorDarkGrey: #757575;
 	@media screen and (max-width: 1440px){
 		height: 500px;
   }
+  @media screen and (max-width: $mobile-768) {
+    height: 730px;
+    background-image: url('../img/section-2/executive-bg-768.jpg');
+    background-position: top;
+  }
   .wrapper{
     height: 1100px;
     display: flex;
     justify-content: flex-end;
     @media screen and (max-width:1440px){
       height: 830px;
+    }
+    @media screen and (max-width: $mobile-768) {
+      width: 95%;
+      height: 1200px;
     }
     .dot--wrapper{
       width: 100px;
@@ -245,6 +285,12 @@ $colorDarkGrey: #757575;
         @media screen and (max-width:1280px){
           left: 120px;
         }
+        @media screen and (max-width: $mobile-768) {
+          width: 80px;
+          height: 80px;
+          top: 180px;
+          left: 310px;
+        }
       }
     }
     .logo--wrapper{
@@ -259,53 +305,59 @@ $colorDarkGrey: #757575;
   }
 }
 
-.footer{
+.footer {
   background-color: $colorDarkGrey;
   padding: 210px 0 70px;
-  .footer--list{
+  .footer--list {
     width: 100%;
     display: flex;
     flex-flow: wrap;
     justify-content: flex-end;
-    .list--item{
+    .list--item {
       width: 20%;
       display: flex;
       flex-flow: wrap;
-      justify-content: flex-start;
-      .directions--wrapper{
-        .text--item{
+			justify-content: flex-start;
+			@media screen and (max-width: $mobile-768) {
+				width: 30%;
+			}
+      .directions--wrapper {
+        .text--item {
           color: $colorWhite;
           font-family: $font-light;
           font-size: 16px;
           line-height: 25px;
         }
       }
-      .info--wrapper{
-        .text--item{
+      .info--wrapper {
+        .text--item {
           color: $colorWhite;
           font-family: $font-light;
           font-size: 16px;
           line-height: 25px;
         }
       }
-      .social--wrapper{
+      .social--wrapper {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        .social--list{
+        .social--list {
           width: 50%;
           display: flex;
-          margin-top: 10px;
-          .list--item{
-            width: 20%;
-            .img{
+					margin-top: 10px;
+					@media screen and (max-width: $mobile-768) {
+						width: 65%;
+					}
+          .list--item {
+            width: 25%;
+            .img {
               max-width: 23px;
               height: 23px;
             }
           }
         }
       }
-      &.first{
+      &.first {
         margin-right: 120px;
       }
     }
