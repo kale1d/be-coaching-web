@@ -445,6 +445,9 @@ ul {
           color: #cccccc; }
     .menu--wrapper .menu .link {
       width: 30%; }
+      @media screen and (max-width: 768px) {
+        .menu--wrapper .menu .link {
+          width: 60%; } }
     .menu--wrapper .menu .social--wrapper {
       width: 20%; }
       .menu--wrapper .menu .social--wrapper .social--list {
@@ -455,6 +458,9 @@ ul {
           .menu--wrapper .menu .social--wrapper .social--list .list--item .img {
             max-width: 23px;
             height: 23px; }
+      @media screen and (max-width: 768px) {
+        .menu--wrapper .menu .social--wrapper {
+          display: none; } }
 
 .container {
   width: 100%;
@@ -462,6 +468,9 @@ ul {
   top: 25px;
   left: 95vw;
   z-index: 99999; }
+  @media screen and (max-width: 768px) {
+    .container {
+      left: 90vw; } }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
     display: block;
     user-select: none; }
@@ -640,6 +649,11 @@ ul {
   @media screen and (max-width: 1440px) {
     .header--section {
       height: 500px; } }
+  @media screen and (max-width: 768px) {
+    .header--section {
+      height: 730px;
+      background-image: url("../img/section-2/personal-bg-768.jpg");
+      background-position: top; } }
   .header--section .wrapper {
     height: 950px;
     display: flex;
@@ -647,6 +661,10 @@ ul {
     @media screen and (max-width: 1440px) {
       .header--section .wrapper {
         height: 630px; } }
+    @media screen and (max-width: 768px) {
+      .header--section .wrapper {
+        width: 95%;
+        height: 960px; } }
     .header--section .wrapper .dot--wrapper {
       width: 100px;
       display: flex;
@@ -669,6 +687,12 @@ ul {
         @media screen and (max-width: 1280px) {
           .header--section .wrapper .dot--wrapper .dot {
             left: 90px; } }
+        @media screen and (max-width: 768px) {
+          .header--section .wrapper .dot--wrapper .dot {
+            width: 80px;
+            height: 80px;
+            top: 160px;
+            left: 290px; } }
     .header--section .wrapper .logo--wrapper {
       width: 100%;
       max-width: 360px;
@@ -731,6 +755,10 @@ ul {
   @media screen and (max-width: 1440px) {
     .organization--section {
       height: 500px; } }
+  @media screen and (max-width: 768px) {
+    .organization--section {
+      height: 730px;
+      background-image: url("../img/section-2/organization-bg-768.jpg"); } }
   .organization--section .wrapper {
     height: 1100px;
     display: flex;
@@ -738,6 +766,10 @@ ul {
     @media screen and (max-width: 1440px) {
       .organization--section .wrapper {
         height: 830px; } }
+    @media screen and (max-width: 768px) {
+      .organization--section .wrapper {
+        width: 95%;
+        height: 1200px; } }
     .organization--section .wrapper .dot--wrapper {
       width: 100px;
       display: flex;
@@ -761,6 +793,12 @@ ul {
         @media screen and (max-width: 1280px) {
           .organization--section .wrapper .dot--wrapper .dot {
             left: 280px; } }
+        @media screen and (max-width: 768px) {
+          .organization--section .wrapper .dot--wrapper .dot {
+            width: 80px;
+            height: 80px;
+            top: 200px;
+            left: 460px; } }
     .organization--section .wrapper .logo--wrapper {
       width: 100%;
       max-width: 570px;
@@ -780,6 +818,11 @@ ul {
   @media screen and (max-width: 1440px) {
     .executive--section {
       height: 500px; } }
+  @media screen and (max-width: 768px) {
+    .executive--section {
+      height: 730px;
+      background-image: url("../img/section-2/executive-bg-768.jpg");
+      background-position: top; } }
   .executive--section .wrapper {
     height: 1100px;
     display: flex;
@@ -787,6 +830,10 @@ ul {
     @media screen and (max-width: 1440px) {
       .executive--section .wrapper {
         height: 830px; } }
+    @media screen and (max-width: 768px) {
+      .executive--section .wrapper {
+        width: 95%;
+        height: 1200px; } }
     .executive--section .wrapper .dot--wrapper {
       width: 100px;
       display: flex;
@@ -809,6 +856,12 @@ ul {
         @media screen and (max-width: 1280px) {
           .executive--section .wrapper .dot--wrapper .dot {
             left: 120px; } }
+        @media screen and (max-width: 768px) {
+          .executive--section .wrapper .dot--wrapper .dot {
+            width: 80px;
+            height: 80px;
+            top: 180px;
+            left: 310px; } }
     .executive--section .wrapper .logo--wrapper {
       width: 100%;
       max-width: 380px;
@@ -831,6 +884,9 @@ ul {
       display: flex;
       flex-flow: wrap;
       justify-content: flex-start; }
+      @media screen and (max-width: 768px) {
+        .footer .footer--list .list--item {
+          width: 30%; } }
       .footer .footer--list .list--item .directions--wrapper .text--item {
         color: #ffffff;
         font-family: "MontserratLight", Helvetica, Arial, sans-serif;
@@ -849,8 +905,11 @@ ul {
           width: 50%;
           display: flex;
           margin-top: 10px; }
+          @media screen and (max-width: 768px) {
+            .footer .footer--list .list--item .social--wrapper .social--list {
+              width: 65%; } }
           .footer .footer--list .list--item .social--wrapper .social--list .list--item {
-            width: 20%; }
+            width: 25%; }
             .footer .footer--list .list--item .social--wrapper .social--list .list--item .img {
               max-width: 23px;
               height: 23px; }

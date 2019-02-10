@@ -6,6 +6,8 @@ $colorAqua: #29ACB9;
 $colorDarkAqua: #006070;
 $colorDarkGrey: #757575;
 $colorLightGrey: #f2f2f2;
+
+$mobile-768: 768px;
 //global classes
 .wrapper {
   width: 98%;
@@ -77,6 +79,9 @@ $colorLightGrey: #f2f2f2;
     }
     .link {
       width: 30%;
+      @media screen and (max-width: $mobile-768) {
+        width: 60%;
+      }
     }
     .social--wrapper {
       width: 20%;
@@ -91,6 +96,9 @@ $colorLightGrey: #f2f2f2;
           }
         }
       }
+      @media screen and (max-width: $mobile-768){
+        display: none;
+      }
     }
   }
 }
@@ -101,6 +109,9 @@ $colorLightGrey: #f2f2f2;
   top: 25px;
   left: 95vw;
   z-index: 99999;
+  @media screen and (max-width: $mobile-768) {
+    left: 90vw;
+  }
   .hamburger--wrapper {
     .hamburger-menu--wrapper {
       display: block;

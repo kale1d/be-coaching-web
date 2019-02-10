@@ -119,53 +119,59 @@ $colorDarkGrey: #757575;
       }
     }
 
-    .footer{
-    background-color: $colorDarkGrey;
-    padding: 210px 0 70px;
-    .footer--list{
+    .footer {
+      background-color: $colorDarkGrey;
+      padding: 210px 0 70px;
+      .footer--list {
         width: 100%;
         display: flex;
         flex-flow: wrap;
         justify-content: flex-end;
-        .list--item{
-        width: 20%;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: flex-start;
-        .directions--wrapper{
-            .text--item{
-            color: $colorWhite;
-            font-family: $font-light;
-            font-size: 16px;
-            line-height: 25px;
+        .list--item {
+          width: 20%;
+          display: flex;
+          flex-flow: wrap;
+          justify-content: flex-start;
+          @media screen and (max-width: $mobile-768) {
+            width: 30%;
+          }
+          .directions--wrapper {
+            .text--item {
+              color: $colorWhite;
+              font-family: $font-light;
+              font-size: 16px;
+              line-height: 25px;
             }
-        }
-        .info--wrapper{
-            .text--item{
-            color: $colorWhite;
-            font-family: $font-light;
-            font-size: 16px;
-            line-height: 25px;
+          }
+          .info--wrapper {
+            .text--item {
+              color: $colorWhite;
+              font-family: $font-light;
+              font-size: 16px;
+              line-height: 25px;
             }
-        }
-        .social--wrapper{
+          }
+          .social--wrapper {
             width: 100%;
             display: flex;
             justify-content: flex-start;
-            .social--list{
-            width: 50%;
-            display: flex;
-            margin-top: 10px;
-            .list--item{
-                width: 20%;
-                .img{
-                max-width: 23px;
-                height: 23px;
+            .social--list {
+              width: 50%;
+              display: flex;
+              margin-top: 10px;
+              @media screen and (max-width: $mobile-768) {
+                width: 65%;
+              }
+              .list--item {
+                width: 25%;
+                .img {
+                  max-width: 23px;
+                  height: 23px;
                 }
+              }
             }
-            }
-        }
-        &.first{
+          }
+          &.first {
             margin-right: 120px;
           }
         }
