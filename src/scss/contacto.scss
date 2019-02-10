@@ -55,15 +55,24 @@ $colorDarkGrey: #757575;
         background-color: $colorAqua;
         padding: 150px 0 100px;
         position: relative;
+        @media screen and (max-width: $mobile-768){
+          padding-top:50px;
+        }
         .info--wrapper{
         margin-left: 20%;
         @media screen and (max-width: 1440px){
           margin-left: 10%;
         }
+        @media screen and (max-width: $mobile-768){
+          margin: 5%;
+        }
         .info--title{
           color: $colorDarkAqua;
           font-family: $font-bold;
           font-size: 71px;
+          @media screen and (max-width: $mobile-768){
+            font-size:54px;
+          }
         }
        
       .bg--img{
@@ -75,6 +84,9 @@ $colorDarkGrey: #757575;
         @media screen and (max-width:1440px){
           right: 150px;
         }
+        @media screen and (max-width:$mobile-768) {
+          display: none;
+        }
       }
     
       .contact--form {
@@ -84,6 +96,11 @@ $colorDarkGrey: #757575;
           flex-direction: column;
           justify-content: space-between;
           margin-top: 50px;
+          @media screen and (max-width: $mobile-768){
+            width: 550px;
+            height: 570px;
+            margin-top: 80px;
+          }
     
     
           .input--wrapper {
@@ -95,6 +112,9 @@ $colorDarkGrey: #757575;
                   color: $colorDarkAqua;
                   font-size: 22px;
                   margin: 0 0 15px 25px;
+                  @media screen and (max-width: $mobile-768){
+                    font-size: 18px;
+                  }
               }
           }
     
