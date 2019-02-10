@@ -417,7 +417,12 @@ ul {
 .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: space-around;
+}
+@media screen and (max-width: 769px) {
+  .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
+    max-height: 90%;
+  }
 }
 .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item {
   width: 100%;

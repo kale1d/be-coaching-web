@@ -206,7 +206,10 @@ $mobile-768: 769px;
         .list--container {
           display: flex;
           flex-direction: column;
-          justify-content: baseline;
+          justify-content: space-around;
+          @media screen and (max-width: $mobile-768) {
+            max-height: 90%;
+         }
         }
         .list--item {
           width: 100%;
