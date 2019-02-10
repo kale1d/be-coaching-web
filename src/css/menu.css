@@ -252,6 +252,9 @@ ul {
           color: #cccccc; }
     .menu--wrapper .menu .link {
       width: 30%; }
+      @media screen and (max-width: 768px) {
+        .menu--wrapper .menu .link {
+          width: 60%; } }
     .menu--wrapper .menu .social--wrapper {
       width: 20%; }
       .menu--wrapper .menu .social--wrapper .social--list {
@@ -262,6 +265,9 @@ ul {
           .menu--wrapper .menu .social--wrapper .social--list .list--item .img {
             max-width: 23px;
             height: 23px; }
+      @media screen and (max-width: 768px) {
+        .menu--wrapper .menu .social--wrapper {
+          display: none; } }
 
 .container {
   width: 100%;
@@ -269,6 +275,9 @@ ul {
   top: 25px;
   left: 95vw;
   z-index: 99999; }
+  @media screen and (max-width: 768px) {
+    .container {
+      left: 90vw; } }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
     display: block;
     user-select: none; }
