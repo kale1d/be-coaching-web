@@ -867,6 +867,11 @@ ul {
   background-color: #757575;
   padding: 210px 0 70px;
 }
+@media screen and (max-width: 769px) {
+  .footer {
+    padding: 80px 0;
+  }
+}
 .footer .footer--list {
   width: 100%;
   display: flex;
