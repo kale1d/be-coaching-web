@@ -7,7 +7,7 @@ $colorAqua: #29ACB9;
 $colorDarkAqua: #006070;
 $colorDarkGrey: #757575;
 $colorLightGrey: #f2f2f2;
-$mobile-768: 768px;
+$mobile-768: 800px;
 //global classes
 .wrapper {
   width: 98%;
@@ -295,8 +295,9 @@ $mobile-768: 768px;
       align-items: center;
       justify-content: center;
       @media screen and (max-width: $mobile-768) {
-        max-width: 209px;
-        height: 209px;
+        width: 33%;
+        max-width: 235px;
+        height: 235px;
       }
       .item--wrapper {
         display: flex;
@@ -316,7 +317,7 @@ $mobile-768: 768px;
         &.obj {
           max-width: 60px;
           @media screen and (max-width: $mobile-768) {
-            max-width: 56px;
+            max-width: 50px;
           }
         }
         &.dsg {
@@ -344,9 +345,9 @@ $mobile-768: 768px;
         font-size: 13px;
         line-height: 18px;
         @media screen and (max-width: $mobile-768) {
-          max-width: 140px;
-          font-size: 8px;
-          line-height: 10px;
+          max-width: 150px;
+          font-size: 10px;
+          line-height: 13px;
         }
       }
     }
