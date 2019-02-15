@@ -8,6 +8,7 @@ $colorDarkGrey: #757575;
 $colorLightGrey: #f2f2f2;
 
 $mobile-768: 800px;
+$mobile-420: 420px;
 //global classes
 .wrapper {
   width: 98%;
@@ -15,6 +16,9 @@ $mobile-768: 800px;
   margin: auto;
   @media screen and (max-width: 1680px) {
     max-width: 1366px;
+  }
+  @media screen and (max-width:$mobile-420) {
+    max-width: 98%;
   }
 }
 
@@ -52,6 +56,9 @@ $mobile-768: 800px;
       height: 110px;
       background-color: $colorAqua;
     }
+    @media screen and (max-width: $mobile-420) {
+      height: 80px;
+    }
     .logo {
       width: 40%;
       a {
@@ -64,6 +71,10 @@ $mobile-768: 800px;
         max-width: 350px;
         max-height: 135px;
         cursor: pointer;
+        @media screen and (max-width: $mobile-420){
+          max-height: 114px;
+          margin-top: 10px;
+        }
       }
     }
     .button {
@@ -89,6 +100,9 @@ $mobile-768: 800px;
       width: 30%;
       @media screen and (max-width: $mobile-768) {
         width: 60%;
+      }
+      @media screen and (max-width: $mobile-420) {
+        display: none;
       }
     }
     .social--wrapper {
@@ -119,6 +133,10 @@ $mobile-768: 800px;
   z-index: 99999;
   @media screen and (max-width: $mobile-768) {
     left: 90vw;
+  }
+  @media screen and (max-width: $mobile-420) {
+    left: 82vw;
+    top: 10px;
   }
   .hamburger--wrapper {
     .hamburger-menu--wrapper {

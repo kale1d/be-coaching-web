@@ -391,6 +391,9 @@ ul {
   @media screen and (max-width: 1680px) {
     .wrapper {
       max-width: 1366px; } }
+  @media screen and (max-width: 420px) {
+    .wrapper {
+      max-width: 98%; } }
 
 .wrap--text {
   display: block; }
@@ -424,6 +427,9 @@ ul {
       .menu--wrapper .menu {
         height: 110px;
         background-color: #29ACB9; } }
+    @media screen and (max-width: 420px) {
+      .menu--wrapper .menu {
+        height: 80px; } }
     .menu--wrapper .menu .logo {
       width: 40%; }
       .menu--wrapper .menu .logo a {
@@ -435,6 +441,10 @@ ul {
         max-width: 350px;
         max-height: 135px;
         cursor: pointer; }
+        @media screen and (max-width: 420px) {
+          .menu--wrapper .menu .logo .img {
+            max-height: 114px;
+            margin-top: 10px; } }
     .menu--wrapper .menu .button {
       width: 100%;
       max-width: 130px;
@@ -456,6 +466,9 @@ ul {
       @media screen and (max-width: 800px) {
         .menu--wrapper .menu .link {
           width: 60%; } }
+      @media screen and (max-width: 420px) {
+        .menu--wrapper .menu .link {
+          display: none; } }
     .menu--wrapper .menu .social--wrapper {
       width: 20%; }
       .menu--wrapper .menu .social--wrapper .social--list {
@@ -479,6 +492,10 @@ ul {
   @media screen and (max-width: 800px) {
     .container {
       left: 90vw; } }
+  @media screen and (max-width: 420px) {
+    .container {
+      left: 82vw;
+      top: 10px; } }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
     display: block;
     user-select: none; }
@@ -644,6 +661,9 @@ ul {
   @media screen and (max-width: 1680px) {
     .wrapper {
       max-width: 1366px; } }
+  @media screen and (max-width: 420px) {
+    .wrapper {
+      max-width: 98%; } }
 
 .wrap--text {
   display: block; }
@@ -696,6 +716,10 @@ ul {
       .header--section .text--wrapper {
         align-items: flex-start;
         margin-left: 30px; } }
+    @media screen and (max-width: 420px) {
+      .header--section .text--wrapper {
+        width: 80%;
+        margin-top: 20px; } }
     .header--section .text--wrapper .title {
       width: 73%;
       color: #ffffff;
@@ -707,6 +731,11 @@ ul {
         .header--section .text--wrapper .title {
           font-size: 52px;
           line-height: 71px; } }
+      @media screen and (max-width: 420px) {
+        .header--section .text--wrapper .title {
+          width: 100%;
+          font-size: 37px;
+          line-height: 51px; } }
     .header--section .text--wrapper .subtitle--wrapper {
       width: 73%;
       color: #ffffff;
@@ -715,6 +744,9 @@ ul {
       @media screen and (max-width: 1440px) {
         .header--section .text--wrapper .subtitle--wrapper {
           margin-top: 70px; } }
+      @media screen and (max-width: 420px) {
+        .header--section .text--wrapper .subtitle--wrapper {
+          margin-top: 20px; } }
       .header--section .text--wrapper .subtitle--wrapper .subtitle--big {
         font-size: 36px; }
         @media screen and (max-width: 800px) {
@@ -722,6 +754,10 @@ ul {
             font-size: 24px; }
             .header--section .text--wrapper .subtitle--wrapper .subtitle--big .wrap--text {
               display: block; } }
+        @media screen and (max-width: 420px) {
+          .header--section .text--wrapper .subtitle--wrapper .subtitle--big {
+            font-size: 19px;
+            line-height: 22px; } }
       .header--section .text--wrapper .subtitle--wrapper .subtitle--small {
         font-size: 20px;
         margin-top: 15px; }
@@ -731,6 +767,11 @@ ul {
             line-height: 20px; }
             .header--section .text--wrapper .subtitle--wrapper .subtitle--small .wrap--text {
               display: block; } }
+        @media screen and (max-width: 420px) {
+          .header--section .text--wrapper .subtitle--wrapper .subtitle--small {
+            font-size: 10px;
+            line-height: 15px;
+            margin-top: 7px; } }
       .header--section .text--wrapper .subtitle--wrapper .button-home {
         background-color: #ffffff;
         margin-top: 30px;
@@ -752,11 +793,18 @@ ul {
   @media screen and (max-width: 800px) {
     .info--section {
       padding-top: 180px; } }
+  @media screen and (max-width: 420px) {
+    .info--section {
+      padding-top: 120px; } }
   .info--section .info--wrapper {
     margin-left: 20%; }
     @media screen and (max-width: 1440px) {
       .info--section .info--wrapper {
         margin-left: 10%; } }
+    @media screen and (max-width: 420px) {
+      .info--section .info--wrapper {
+        margin-left: 0;
+        text-align: center; } }
     .info--section .info--wrapper .info--title {
       color: #006070;
       font-family: "MontserratBold", Helvetica, Arial, sans-serif;
@@ -766,6 +814,9 @@ ul {
           font-size: 54px; }
           .info--section .info--wrapper .info--title .wrap--text {
             display: block; } }
+      @media screen and (max-width: 420px) {
+        .info--section .info--wrapper .info--title {
+          font-size: 37px; } }
     .info--section .info--wrapper .info--subtitle {
       color: #ffffff;
       font-family: "MontserratThin", Helvetica, Arial, sans-serif;
@@ -779,6 +830,11 @@ ul {
           max-width: 440px; }
           .info--section .info--wrapper .info--subtitle .wrap--text {
             display: inline; } }
+      @media screen and (max-width: 420px) {
+        .info--section .info--wrapper .info--subtitle {
+          font-size: 17px;
+          line-height: 28px;
+          margin-top: 25px; } }
       .info--section .info--wrapper .info--subtitle .bold {
         font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
         display: inline; }
@@ -801,6 +857,9 @@ ul {
       .info--section .values--list {
         flex-flow: wrap;
         margin-top: 70px; } }
+    @media screen and (max-width: 420px) {
+      .info--section .values--list {
+        width: 40%; } }
     .info--section .values--list .list--item {
       width: 27%;
       max-width: 240px; }
@@ -813,12 +872,20 @@ ul {
         color: #006070;
         font-family: "MontserratBold", Helvetica, Arial, sans-serif;
         font-size: 24px; }
+        @media screen and (max-width: 420px) {
+          .info--section .values--list .list--item .item--title {
+            font-size: 16px; } }
       .info--section .values--list .list--item .item--text {
         color: #006070;
         font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
         font-size: 13px;
         line-height: 18px;
         margin-top: 15px; }
+        @media screen and (max-width: 420px) {
+          .info--section .values--list .list--item .item--text {
+            font-size: 8px;
+            line-height: 12px;
+            margin-top: 8px; } }
   .info--section .bg--img {
     width: 100%;
     max-width: 100px;
@@ -842,6 +909,19 @@ ul {
         position: absolute;
         bottom: -5px;
         right: 90px; } }
+    @media screen and (max-width: 420px) {
+      .info--section .bg-img-tablet {
+        display: none; } }
+  .info--section .bg-img-mobile {
+    display: none; }
+    @media screen and (max-width: 420px) {
+      .info--section .bg-img-mobile {
+        display: block;
+        width: 100%;
+        max-width: 54px;
+        bottom: -11px;
+        right: 20px;
+        position: absolute; } }
 
 .img--section {
   width: 100%;
@@ -856,10 +936,17 @@ ul {
     .img--section {
       background-image: url("../img/section-3-768.jpg");
       height: 470px; } }
+  @media screen and (max-width: 420px) {
+    .img--section {
+      background-image: url("../img/section-3-420.jpg");
+      height: 375px; } }
 
 .coaching--section {
   background-color: #ffffff;
   padding: 90px 0; }
+  @media screen and (max-width: 420px) {
+    .coaching--section {
+      padding: 60px 0 10px; } }
   .coaching--section .coaching--title {
     color: #006070;
     font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
@@ -870,6 +957,9 @@ ul {
     @media screen and (max-width: 800px) {
       .coaching--section .coaching--title {
         font-size: 54px; } }
+    @media screen and (max-width: 420px) {
+      .coaching--section .coaching--title {
+        font-size: 36px; } }
   .coaching--section .values--list {
     width: 80%;
     display: flex;
@@ -879,6 +969,10 @@ ul {
     @media screen and (max-width: 1440px) {
       .coaching--section .values--list {
         width: 100%; } }
+    @media screen and (max-width: 420px) {
+      .coaching--section .values--list {
+        flex-flow: wrap;
+        margin-top: 90px; } }
     .coaching--section .values--list .list--item {
       width: 27%;
       max-width: 378px;
@@ -893,6 +987,10 @@ ul {
           width: 33%;
           max-width: 235px;
           height: 235px; } }
+      @media screen and (max-width: 420px) {
+        .coaching--section .values--list .list--item {
+          width: 100%;
+          margin-bottom: 20px; } }
       .coaching--section .values--list .list--item .item--wrapper {
         display: flex;
         flex-flow: wrap;
@@ -940,7 +1038,8 @@ ul {
 
 .note--section {
   background-color: #006070;
-  padding: 100px 0; }
+  padding: 100px 0;
+  text-align: center; }
   .note--section .text--wrapper {
     width: 80%;
     margin-left: 13vw; }
@@ -972,44 +1071,64 @@ ul {
 .footer {
   background-color: #757575;
   padding: 210px 0 70px; }
+  @media screen and (max-width: 420px) {
+    .footer {
+      padding-top: 110px; } }
   .footer .footer--list {
     width: 100%;
     display: flex;
     flex-flow: wrap;
     justify-content: flex-end; }
     .footer .footer--list .list--item {
-      width: 20%;
+      width: 100%;
       display: flex;
-      flex-flow: wrap;
-      justify-content: flex-start; }
-      @media screen and (max-width: 800px) {
+      justify-content: space-around; }
+      @media screen and (max-width: 420px) {
         .footer .footer--list .list--item {
-          width: 30%; } }
-      .footer .footer--list .list--item .directions--wrapper .text--item {
-        color: #ffffff;
-        font-family: "MontserratLight", Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        line-height: 25px; }
-      .footer .footer--list .list--item .info--wrapper .text--item {
-        color: #ffffff;
-        font-family: "MontserratLight", Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        line-height: 25px; }
+          flex-flow: wrap;
+          justify-content: center; } }
+      .footer .footer--list .list--item .info--wrapper {
+        width: 50%;
+        margin-left: 3vw; }
+        @media screen and (max-width: 800px) {
+          .footer .footer--list .list--item .info--wrapper {
+            margin-left: 4vw; } }
+        @media screen and (max-width: 420px) {
+          .footer .footer--list .list--item .info--wrapper {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+            order: 2; } }
+        .footer .footer--list .list--item .info--wrapper .text--item {
+          color: #ffffff;
+          font-family: "MontserratLight", Helvetica, Arial, sans-serif;
+          font-size: 16px;
+          line-height: 25px; }
       .footer .footer--list .list--item .social--wrapper {
-        width: 100%;
+        width: 50%;
         display: flex;
-        justify-content: flex-start; }
+        justify-content: flex-end; }
+        @media screen and (max-width: 420px) {
+          .footer .footer--list .list--item .social--wrapper {
+            width: 100%;
+            justify-content: center;
+            order: 1;
+            margin-bottom: 90px; } }
         .footer .footer--list .list--item .social--wrapper .social--list {
-          width: 50%;
+          width: 40%;
           display: flex;
           margin-top: 10px; }
           @media screen and (max-width: 800px) {
             .footer .footer--list .list--item .social--wrapper .social--list {
-              width: 65%; } }
+              width: 50%; } }
           .footer .footer--list .list--item .social--wrapper .social--list .list--item {
-            width: 25%; }
+            width: 30%; }
             .footer .footer--list .list--item .social--wrapper .social--list .list--item .img {
               max-width: 23px;
               height: 23px; }
+              @media screen and (max-width: 420px) {
+                .footer .footer--list .list--item .social--wrapper .social--list .list--item .img {
+                  max-width: 27px;
+                  height: 27px; } }
       .footer .footer--list .list--item.first {
         margin-right: 120px; }

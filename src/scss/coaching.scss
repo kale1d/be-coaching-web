@@ -19,7 +19,10 @@ $mobile-768: 800px;
   margin: auto;
 	@media screen and (max-width:1680px){
 		max-width: 1366px;
-	}
+  }
+  @media screen and (max-width: $mobile-420) {
+    max-width: 98%;
+  }
 }
 .wrap--text{
 	display: block;
@@ -62,6 +65,9 @@ $mobile-768: 800px;
     background-image: url('../img/section-2/personal-bg-768.jpg');
     background-position: top;
   }
+  @media screen and (max-width: $mobile-420) {
+    height: 660px;
+  }
   .wrapper{
     height: 950px;
     display: flex;
@@ -101,6 +107,12 @@ $mobile-768: 800px;
           top: 160px;
           left: 290px;
         }
+        @media screen and (max-width: $mobile-420) {
+          width: 65px;
+          height: 65px;
+          top: 0;
+          left: 230px;
+        }
       }
     }
     .logo--wrapper{
@@ -111,6 +123,9 @@ $mobile-768: 800px;
         max-width: 300px;
         margin-right: 0;
       }
+      @media screen and (max-width: $mobile-420){
+        max-width: 210px;
+      }
     }
   }
 }
@@ -118,6 +133,9 @@ $mobile-768: 800px;
 .info--section{
   background-color: #f2f2f2;
   padding: 50px 0;
+  @media screen and (max-width:$mobile-420){
+    padding: 160px 0;
+  }
   .text--wrapper{
     display: flex;
     justify-content: flex-end;
@@ -125,6 +143,11 @@ $mobile-768: 800px;
     @media screen and (max-width:1440px){
       margin-right: 10px;
     }
+    @media screen and (max-width:$mobile-420){
+      justify-content: center;
+      margin-right: 0;
+    }
+
     .info--text{
       width: 100%;
       max-width: 710px;
@@ -133,6 +156,10 @@ $mobile-768: 800px;
       font-size: 20px;
       line-height: 30px;
       text-align: right;
+      @media screen and (max-width:$mobile-420){
+        max-width: 250px;
+        text-align: center;
+      }
       .bold{
         font-family: $font-bold;
       }
@@ -164,6 +191,9 @@ $mobile-768: 800px;
   &.executive{
     background-color:$colorDarkAqua;
     padding-bottom: 200px;
+    @media screen and (max-width: $mobile-420) {
+      padding-bottom: 160px;
+    }
     .info--text{
       color:$colorWhite;
     }
@@ -183,6 +213,10 @@ $mobile-768: 800px;
     height: 730px;
     background-image: url('../img/section-2/organization-bg-768.jpg');
   }
+  @media screen and(max-width: $mobile-420) {
+    height: 780px;
+    background-image: url('../img/section-2/organization-bg-420.jpg');
+  }
   .wrapper{
     height: 1100px;
     display: flex;
@@ -193,6 +227,10 @@ $mobile-768: 800px;
     @media screen and (max-width: $mobile-768) {
       width: 95%;
       height: 1200px;
+    }
+    @media screen and (max-width: $mobile-420) {
+      height: 1300px;
+      display: block;
     }
     .dot--wrapper{
       width: 100px;
@@ -223,6 +261,12 @@ $mobile-768: 800px;
           top: 200px;
           left: 460px;
         }
+        @media screen and (max-width: $mobile-420) {
+          width: 65px;
+          height: 65px;
+          top: 50px;
+          left: 230px;
+        }
       }
     }
     .logo--wrapper{
@@ -252,6 +296,10 @@ $mobile-768: 800px;
     background-image: url('../img/section-2/executive-bg-768.jpg');
     background-position: top;
   }
+  @media screen and (max-width: $mobile-420){
+    height: 780px;
+    background-image: url('../img/section-2/ejecutivo-420.jpg');
+  }
   .wrapper{
     height: 1100px;
     display: flex;
@@ -262,6 +310,9 @@ $mobile-768: 800px;
     @media screen and (max-width: $mobile-768) {
       width: 95%;
       height: 1200px;
+    }
+    @media screen and (max-width: $mobile-420) {
+      height: 1430px;
     }
     .dot--wrapper{
       width: 100px;
@@ -291,6 +342,12 @@ $mobile-768: 800px;
           top: 180px;
           left: 310px;
         }
+        @media screen and(max-width: $mobile-420) {
+          width: 65px;
+          height: 65px;
+          top: 90px;
+          left: 230px;
+        }
       }
     }
     .logo--wrapper{
@@ -308,28 +365,34 @@ $mobile-768: 800px;
 .footer {
   background-color: $colorDarkGrey;
   padding: 210px 0 70px;
+  @media screen and (max-width: $mobile-420){
+    padding-top: 110px;
+  }
   .footer--list {
     width: 100%;
     display: flex;
     flex-flow: wrap;
     justify-content: flex-end;
     .list--item {
-      width: 20%;
+      width: 100%;
       display: flex;
-      flex-flow: wrap;
-			justify-content: flex-start;
-			@media screen and (max-width: $mobile-768) {
-				width: 30%;
-			}
-      .directions--wrapper {
-        .text--item {
-          color: $colorWhite;
-          font-family: $font-light;
-          font-size: 16px;
-          line-height: 25px;
-        }
+      justify-content: space-around;
+      @media screen and (max-width:$mobile-420){
+        flex-flow: wrap;
+        justify-content: center;
       }
       .info--wrapper {
+        width: 50%;
+        margin-left: 3vw;
+        @media screen and (max-width: $mobile-768) {
+          margin-left: 4vw;
+        }
+        @media screen and (max-width: $mobile-420) {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+          order: 2;
+        }
         .text--item {
           color: $colorWhite;
           font-family: $font-light;
@@ -338,21 +401,31 @@ $mobile-768: 800px;
         }
       }
       .social--wrapper {
-        width: 100%;
+        width: 50%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
+        @media screen and (max-width: $mobile-420){
+          width: 100%;
+          justify-content: center;
+          order: 1;
+          margin-bottom: 90px;
+        }
         .social--list {
-          width: 50%;
+          width: 40%;
           display: flex;
-					margin-top: 10px;
-					@media screen and (max-width: $mobile-768) {
-						width: 65%;
-					}
+          margin-top: 10px;
+          @media screen and (max-width: $mobile-768) {
+            width: 50%;
+          }
           .list--item {
-            width: 25%;
+            width: 30%;
             .img {
               max-width: 23px;
               height: 23px;
+              @media screen and (max-width: $mobile-420) {
+                max-width: 27px;
+                height: 27px;
+              }
             }
           }
         }

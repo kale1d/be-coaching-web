@@ -198,6 +198,9 @@ ul {
   @media screen and (max-width: 1680px) {
     .wrapper {
       max-width: 1366px; } }
+  @media screen and (max-width: 420px) {
+    .wrapper {
+      max-width: 98%; } }
 
 .wrap--text {
   display: block; }
@@ -231,6 +234,9 @@ ul {
       .menu--wrapper .menu {
         height: 110px;
         background-color: #29ACB9; } }
+    @media screen and (max-width: 420px) {
+      .menu--wrapper .menu {
+        height: 80px; } }
     .menu--wrapper .menu .logo {
       width: 40%; }
       .menu--wrapper .menu .logo a {
@@ -242,6 +248,10 @@ ul {
         max-width: 350px;
         max-height: 135px;
         cursor: pointer; }
+        @media screen and (max-width: 420px) {
+          .menu--wrapper .menu .logo .img {
+            max-height: 114px;
+            margin-top: 10px; } }
     .menu--wrapper .menu .button {
       width: 100%;
       max-width: 130px;
@@ -263,6 +273,9 @@ ul {
       @media screen and (max-width: 800px) {
         .menu--wrapper .menu .link {
           width: 60%; } }
+      @media screen and (max-width: 420px) {
+        .menu--wrapper .menu .link {
+          display: none; } }
     .menu--wrapper .menu .social--wrapper {
       width: 20%; }
       .menu--wrapper .menu .social--wrapper .social--list {
@@ -286,6 +299,10 @@ ul {
   @media screen and (max-width: 800px) {
     .container {
       left: 90vw; } }
+  @media screen and (max-width: 420px) {
+    .container {
+      left: 82vw;
+      top: 10px; } }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
     display: block;
     user-select: none; }
