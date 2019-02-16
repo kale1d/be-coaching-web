@@ -432,6 +432,9 @@ ul {
         height: 80px; } }
     .menu--wrapper .menu .logo {
       width: 40%; }
+      @media screen and (max-width: 800px) {
+        .menu--wrapper .menu .logo {
+          margin-left: 4vw; } }
       .menu--wrapper .menu .logo a {
         width: 100%;
         display: flex;
@@ -491,7 +494,7 @@ ul {
   z-index: 99999; }
   @media screen and (max-width: 800px) {
     .container {
-      left: 90vw; } }
+      left: 88vw; } }
   @media screen and (max-width: 420px) {
     .container {
       left: 82vw;
@@ -501,8 +504,8 @@ ul {
     user-select: none; }
     .container .hamburger--wrapper .hamburger-menu--wrapper .input {
       display: block;
-      width: 40px;
-      height: 32px;
+      width: 55px;
+      height: 60px;
       position: absolute;
       top: -7px;
       left: -5px;
@@ -567,15 +570,6 @@ ul {
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
       .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .menu--responsive--social {
         display: none; }
-        @media screen and (max-width: 800px) {
-          .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .menu--responsive--social {
-            max-height: 70%;
-            display: flex;
-            width: 200px;
-            justify-content: space-between;
-            position: absolute;
-            bottom: 20px;
-            right: 50px; } }
       .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--container {
         display: flex;
         flex-direction: column; }
@@ -712,7 +706,7 @@ ul {
         height: 630px; } }
     @media screen and (max-width: 800px) {
       .header--section .wrapper {
-        width: 95%;
+        width: 92%;
         height: 960px; } }
     .header--section .wrapper .dot--wrapper {
       width: 100px;
@@ -741,7 +735,7 @@ ul {
             width: 80px;
             height: 80px;
             top: 160px;
-            left: 290px; } }
+            left: 320px; } }
         @media screen and (max-width: 420px) {
           .header--section .wrapper .dot--wrapper .dot {
             width: 65px;
@@ -773,6 +767,9 @@ ul {
     @media screen and (max-width: 1440px) {
       .info--section .text--wrapper {
         margin-right: 10px; } }
+    @media screen and (max-width: 800px) {
+      .info--section .text--wrapper {
+        margin-right: 40px; } }
     @media screen and (max-width: 420px) {
       .info--section .text--wrapper {
         justify-content: center;
@@ -844,12 +841,14 @@ ul {
         height: 830px; } }
     @media screen and (max-width: 800px) {
       .organization--section .wrapper {
-        width: 95%;
-        height: 1200px; } }
+        width: 92%;
+        height: 1200px;
+        margin-left: 26px; } }
     @media screen and (max-width: 420px) {
       .organization--section .wrapper {
         height: 1300px;
-        display: block; } }
+        display: block;
+        margin-left: 0; } }
     .organization--section .wrapper .dot--wrapper {
       width: 100px;
       display: flex;
@@ -878,7 +877,7 @@ ul {
             width: 80px;
             height: 80px;
             top: 200px;
-            left: 460px; } }
+            left: 490px; } }
         @media screen and (max-width: 420px) {
           .organization--section .wrapper .dot--wrapper .dot {
             width: 65px;
@@ -922,7 +921,7 @@ ul {
         height: 830px; } }
     @media screen and (max-width: 800px) {
       .executive--section .wrapper {
-        width: 95%;
+        width: 92%;
         height: 1200px; } }
     @media screen and (max-width: 420px) {
       .executive--section .wrapper {
@@ -954,7 +953,7 @@ ul {
             width: 80px;
             height: 80px;
             top: 180px;
-            left: 310px; } }
+            left: 330px; } }
         @media screen and (max-width: 420px) {
           .executive--section .wrapper .dot--wrapper .dot {
             width: 65px;

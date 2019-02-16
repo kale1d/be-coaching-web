@@ -63,7 +63,8 @@ $mobile-420: 420px;
     height: 700px;
   }
   @media screen and (max-width: $mobile-768) {
-    height: 800px;
+    background-image: url("../img/header-home-768.jpg");
+    height: 1024px;
   }
   .text--wrapper {
     width: 100%;
@@ -77,7 +78,8 @@ $mobile-420: 420px;
     }
     @media screen and (max-width: $mobile-768) {
       align-items: flex-start;
-      margin-left: 30px;
+      margin-left: 4vw;
+      margin-top: 140px;
     }
     @media screen and (max-width: $mobile-420) {
       width: 80%;
@@ -290,10 +292,10 @@ $mobile-420: 420px;
     @media screen and (max-width: $mobile-768) {
       display: block;
       width: 100%;
-      max-width: 100px;
+      max-width: 83px;
       position: absolute;
       bottom: -5px;
-      right: 90px;
+      right: 34px;
     }
     @media screen and (max-width: $mobile-420){
       display: none;

@@ -76,7 +76,7 @@ $mobile-768: 800px;
       height: 630px;
     }
     @media screen and (max-width: $mobile-768) {
-      width: 95%;
+      width: 92%;
       height: 960px;
     }
     .dot--wrapper{
@@ -105,7 +105,7 @@ $mobile-768: 800px;
           width: 80px;
           height: 80px;
           top: 160px;
-          left: 290px;
+          left: 320px;
         }
         @media screen and (max-width: $mobile-420) {
           width: 65px;
@@ -142,6 +142,9 @@ $mobile-768: 800px;
     margin-right: 60px;
     @media screen and (max-width:1440px){
       margin-right: 10px;
+    }
+    @media screen and (max-width: $mobile-768){
+      margin-right: 40px;
     }
     @media screen and (max-width:$mobile-420){
       justify-content: center;
@@ -225,12 +228,14 @@ $mobile-768: 800px;
       height: 830px;
     }
     @media screen and (max-width: $mobile-768) {
-      width: 95%;
+      width: 92%;
       height: 1200px;
+      margin-left: 26px;
     }
     @media screen and (max-width: $mobile-420) {
       height: 1300px;
       display: block;
+      margin-left: 0;
     }
     .dot--wrapper{
       width: 100px;
@@ -259,7 +264,7 @@ $mobile-768: 800px;
           width: 80px;
           height: 80px;
           top: 200px;
-          left: 460px;
+          left: 490px;
         }
         @media screen and (max-width: $mobile-420) {
           width: 65px;
@@ -308,7 +313,7 @@ $mobile-768: 800px;
       height: 830px;
     }
     @media screen and (max-width: $mobile-768) {
-      width: 95%;
+      width: 92%;
       height: 1200px;
     }
     @media screen and (max-width: $mobile-420) {
@@ -340,7 +345,7 @@ $mobile-768: 800px;
           width: 80px;
           height: 80px;
           top: 180px;
-          left: 310px;
+          left: 330px;
         }
         @media screen and(max-width: $mobile-420) {
           width: 65px;
