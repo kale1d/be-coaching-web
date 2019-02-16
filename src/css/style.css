@@ -497,7 +497,7 @@ ul {
       left: 88vw; } }
   @media screen and (max-width: 420px) {
     .container {
-      left: 82vw;
+      left: 79vw;
       top: 10px; } }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
     display: block;
@@ -697,6 +697,10 @@ ul {
     .header--section {
       background-image: url("../img/header-home-768.jpg");
       height: 1024px; } }
+  @media screen and (max-width: 420px) {
+    .header--section {
+      background-image: url("../img/header-home-420.jpg");
+      height: 760px; } }
   .header--section .text--wrapper {
     width: 100%;
     display: flex;
@@ -715,7 +719,7 @@ ul {
     @media screen and (max-width: 420px) {
       .header--section .text--wrapper {
         width: 80%;
-        margin-top: 20px; } }
+        margin-top: 0; } }
     .header--section .text--wrapper .title {
       width: 73%;
       color: #ffffff;

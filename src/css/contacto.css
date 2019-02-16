@@ -497,7 +497,7 @@ ul {
       left: 88vw; } }
   @media screen and (max-width: 420px) {
     .container {
-      left: 82vw;
+      left: 79vw;
       top: 10px; } }
   .container .hamburger--wrapper .hamburger-menu--wrapper {
     display: block;

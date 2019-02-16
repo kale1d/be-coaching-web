@@ -66,6 +66,10 @@ $mobile-420: 420px;
     background-image: url("../img/header-home-768.jpg");
     height: 1024px;
   }
+  @media screen and (max-width: $mobile-420){
+    background-image: url("../img/header-home-420.jpg");
+    height: 760px;
+  }
   .text--wrapper {
     width: 100%;
     display: flex;
@@ -83,7 +87,7 @@ $mobile-420: 420px;
     }
     @media screen and (max-width: $mobile-420) {
       width: 80%;
-      margin-top: 20px;
+      margin-top: 0;
     }
     .title {
       width: 73%;

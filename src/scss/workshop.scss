@@ -17,6 +17,9 @@ $mobile-768: 800px;
   @media screen and (max-width: 1680px) {
     max-width: 1366px;
   }
+  @media screen and (max-width: $mobile-420){
+    max-width: 98%;
+  }
 }
 
 .wrap--text {
@@ -54,6 +57,9 @@ $mobile-768: 800px;
     @media screen and (max-width: 1440px) {
       margin-left: 10%;
     }
+    @media screen and (max-width: $mobile-420){
+      margin-left: 0;
+    }
     .info--title {
       color: $colorDarkAqua;
       font-family: $font-bold;
@@ -65,6 +71,11 @@ $mobile-768: 800px;
       @media screen and (max-width: $mobile-768) {
         font-size: 54px;
       }
+      @media screen and (max-width: $mobile-420) {
+        font-size: 34px;
+        margin-top: 80px;
+        text-align: center;
+      }
     }
     .info--list {
       max-width: 800px;
@@ -73,6 +84,12 @@ $mobile-768: 800px;
       font-size: 24px;
       line-height: 36px;
       margin-top: 65px;
+      @media screen and (max-width: $mobile-420){
+        max-width: 270px;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 65px auto;
+      }
       .bold {
         font-family: $font-medium;
         display: inline;
@@ -91,11 +108,22 @@ $mobile-768: 800px;
           position: absolute;
           top: 10px;
           margin-left: -30px;
+          @media screen and (max-width: $mobile-420){
+            width: 13px;
+            height: 13px;
+            top: 5px;
+            margin-left: -21px;
+          }
         }
         @media screen and (max-width: $mobile-768) {
           margin-left: 30px;
           .wrap--text{
             display: block;
+          }
+        }
+        @media screen and (max-width: $mobile-420) {
+          .wrap--text{
+            display: inline;
           }
         }
       }
@@ -104,9 +132,17 @@ $mobile-768: 800px;
       max-width: 140px;
       background-color: $colorWhite;
       margin-top: 60px;
+      @media screen and (max-width: $mobile-420){
+        max-width: 100px;
+        margin-left: 30px;
+        margin-top: 120px;
+      }
       .a--link {
         color: $colorAqua;
         font-size: 25px;
+        @media screen and (max-width: $mobile-420){
+          font-size: 20px;
+        }
       }
     }
   }
@@ -122,6 +158,9 @@ $mobile-768: 800px;
     @media screen and (max-width: $mobile-768) {
       max-width: 66px;
       right: 50px;
+    }
+    @media screen and (max-width: $mobile-420) {
+      display: none;
     }
   }
 }
