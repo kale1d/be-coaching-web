@@ -239,9 +239,9 @@ $mobile-768: 800px;
       margin-left: 26px;
     }
     @media screen and (max-width: $mobile-420) {
-      height: 1300px;
+      height: 1400px;
       display: block;
-      margin-left: 0;
+      margin-left: 15px;
     }
     .dot--wrapper{
       width: 100px;
@@ -275,7 +275,7 @@ $mobile-768: 800px;
         @media screen and (max-width: $mobile-420) {
           width: 65px;
           height: 65px;
-          top: 50px;
+          top: 110px;
           left: 230px;
         }
       }
