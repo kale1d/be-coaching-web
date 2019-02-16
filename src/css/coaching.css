@@ -691,7 +691,7 @@ ul {
       height: 500px; } }
   @media screen and (max-width: 800px) {
     .header--section {
-      height: 730px;
+      height: 775px;
       background-image: url("../img/section-2/personal-bg-768.jpg");
       background-position: top; } }
   @media screen and (max-width: 420px) {
@@ -757,6 +757,9 @@ ul {
 .info--section {
   background-color: #f2f2f2;
   padding: 50px 0; }
+  @media screen and (max-width: 800px) {
+    .info--section {
+      padding: 40px 0; } }
   @media screen and (max-width: 420px) {
     .info--section {
       padding: 160px 0; } }
@@ -782,6 +785,9 @@ ul {
       font-size: 20px;
       line-height: 30px;
       text-align: right; }
+      @media screen and (max-width: 800px) {
+        .info--section .text--wrapper .info--text {
+          max-width: 525px; } }
       @media screen and (max-width: 420px) {
         .info--section .text--wrapper .info--text {
           max-width: 250px;
@@ -807,7 +813,7 @@ ul {
       color: #ffffff; }
   .info--section.executive {
     background-color: #006070;
-    padding-bottom: 200px; }
+    padding-bottom: 100px; }
     @media screen and (max-width: 420px) {
       .info--section.executive {
         padding-bottom: 160px; } }
@@ -826,7 +832,7 @@ ul {
       height: 500px; } }
   @media screen and (max-width: 800px) {
     .organization--section {
-      height: 730px;
+      height: 680px;
       background-image: url("../img/section-2/organization-bg-768.jpg"); } }
   @media screen and (max-width: 420px) {
     .organization--section {
@@ -905,7 +911,7 @@ ul {
       height: 500px; } }
   @media screen and (max-width: 800px) {
     .executive--section {
-      height: 730px;
+      height: 680px;
       background-image: url("../img/section-2/executive-bg-768.jpg");
       background-position: top; } }
   @media screen and (max-width: 420px) {
