@@ -1,5 +1,6 @@
-const mobile768 = window.matchMedia("(max-width: 768px)");
-
+const mobile768 = window.matchMedia("(max-width: 800px)");
+const mobile420 = window.matchMedia('(max-width: 420px)');
+console.log(mobile420);
 $('.hamburger--list .submenu--wrapper').hide();
 $('.hamburger--list .list--item').mouseover(function(){
   const index = $(this).index();
@@ -8,7 +9,6 @@ $('.hamburger--list .list--item').mouseover(function(){
       $('.hamburger--list .submenu--wrapper').show();
   } else {
     $('.hamburger--list .submenu--wrapper').hide();
-    console.log('hola');
   }
   $.each($('.item--img'), function (i, value) {
     if (index == i && mobile768.matches != true) {
@@ -143,3 +143,12 @@ $('#item-4').waypoint(function(){
 //workshop
 
 });
+if (mobile768.matches === true) {
+  $('#item-3').removeClass('delay-2s');
+  $('#item-4').removeClass('delay-3s');
+  $('#item-4').addClass('delay-1s');
+}
+if (mobile420.matches === true) {
+  $('#item-2').removeClass('delay-1s');
+  $('#item-4').removeClass('delay-1s');
+}
