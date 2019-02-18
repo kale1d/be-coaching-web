@@ -783,6 +783,7 @@ ul {
       @media screen and (max-width: 420px) {
         .header--section .info--wrapper .button {
           max-width: 100px;
+          height: 40px;
           margin-left: 30px;
           margin-top: 120px; } }
       .header--section .info--wrapper .button .a--link {
