@@ -13,7 +13,9 @@ $colorDarkGrey: #757575;
 $mobile-768: 800px;
 $mobile-420: 420px;
 //global classes
-
+body{
+  background-color: $colorAqua;
+}
 .wrapper{
 	width: 98%;
   max-width: 1920px;
@@ -251,6 +253,7 @@ $mobile-420: 420px;
           width: 40%;
           display: flex;
           margin-top: 10px;
+          justify-content: center;
           @media screen and (max-width: $mobile-768) {
             width: 50%;
           }

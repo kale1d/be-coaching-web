@@ -75,7 +75,7 @@ $mobile-420: 420px;
         max-height: 135px;
         cursor: pointer;
         @media screen and (max-width: $mobile-420){
-          max-height: 114px;
+          max-height: 85px;
           margin-top: 10px;
         }
       }
@@ -183,7 +183,12 @@ $mobile-420: 420px;
         justify-content: center;
         background:$colorWhite;
 				border-radius: 30px;
-				cursor: pointer;
+        cursor: pointer;
+        @media screen and (max-width: $mobile-420){
+          width: 45px;
+          height: 45px;
+          padding: 11px;
+        }
       }
       .line {
         display: block;
@@ -273,7 +278,7 @@ $mobile-420: 420px;
               line-height: 40px;
             }
             @media screen and (max-width: 320px) {
-              font-size: 26px; 
+              font-size: 32px; 
               line-height: normal;
             }
           }

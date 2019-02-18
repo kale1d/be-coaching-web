@@ -446,7 +446,7 @@ ul {
         cursor: pointer; }
         @media screen and (max-width: 420px) {
           .menu--wrapper .menu .logo .img {
-            max-height: 114px;
+            max-height: 85px;
             margin-top: 10px; } }
     .menu--wrapper .menu .button {
       width: 100%;
@@ -536,6 +536,11 @@ ul {
       background: #ffffff;
       border-radius: 30px;
       cursor: pointer; }
+      @media screen and (max-width: 420px) {
+        .container .hamburger--wrapper .hamburger-menu--wrapper .line--wrapper {
+          width: 45px;
+          height: 45px;
+          padding: 11px; } }
     .container .hamburger--wrapper .hamburger-menu--wrapper .line {
       display: block;
       width: 33px;
@@ -613,7 +618,7 @@ ul {
           @media screen and (max-width: 320px) {
             .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a,
             .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:visited {
-              font-size: 26px;
+              font-size: 32px;
               line-height: normal; } }
         .container .hamburger--wrapper .hamburger-menu--wrapper .hamburger--list .list--item a:hover {
           color: #29ACB9; }
@@ -852,9 +857,10 @@ ul {
             display: inline; } }
       @media screen and (max-width: 420px) {
         .info--section .info--wrapper .info--subtitle {
+          max-width: 260px;
           font-size: 17px;
           line-height: 28px;
-          margin-top: 25px; } }
+          margin: 25px auto; } }
       .info--section .info--wrapper .info--subtitle .bold {
         font-family: "MontserratMedium", Helvetica, Arial, sans-serif;
         display: inline; }
@@ -1010,7 +1016,7 @@ ul {
       @media screen and (max-width: 420px) {
         .coaching--section .values--list .list--item {
           width: 100%;
-          margin-bottom: 20px; } }
+          margin-bottom: 50px; } }
       .coaching--section .values--list .list--item .item--wrapper {
         display: flex;
         flex-flow: wrap;
@@ -1137,7 +1143,8 @@ ul {
         .footer .footer--list .list--item .social--wrapper .social--list {
           width: 40%;
           display: flex;
-          margin-top: 10px; }
+          margin-top: 10px;
+          justify-content: center; }
           @media screen and (max-width: 800px) {
             .footer .footer--list .list--item .social--wrapper .social--list {
               width: 50%; } }

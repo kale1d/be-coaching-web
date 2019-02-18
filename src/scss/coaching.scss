@@ -425,6 +425,7 @@ $mobile-768: 800px;
           width: 40%;
           display: flex;
           margin-top: 10px;
+          justify-content: center;
           @media screen and (max-width: $mobile-768) {
             width: 50%;
           }

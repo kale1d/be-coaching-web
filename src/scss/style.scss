@@ -214,9 +214,10 @@ $mobile-420: 420px;
         }
       }
       @media screen and (max-width: $mobile-420){
+        max-width: 260px;
         font-size: 17px;
         line-height: 28px;
-        margin-top: 25px;
+        margin: 25px auto;
       }
       .bold {
         font-family: $font-medium;
@@ -387,7 +388,7 @@ $mobile-420: 420px;
       }
       @media screen and (max-width: $mobile-420){
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
       }
       .item--wrapper {
         display: flex;
@@ -532,6 +533,7 @@ $mobile-420: 420px;
           width: 40%;
           display: flex;
           margin-top: 10px;
+          justify-content: center;
           @media screen and (max-width: $mobile-768) {
             width: 50%;
           }
