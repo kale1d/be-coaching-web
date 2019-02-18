@@ -75,7 +75,7 @@ $mobile-420: 420px;
         max-height: 135px;
         cursor: pointer;
         @media screen and (max-width: $mobile-420){
-          max-height: 85px;
+          max-height: 94px;
           margin-top: 10px;
         }
       }
@@ -138,8 +138,8 @@ $mobile-420: 420px;
     left: 88vw;
   }
   @media screen and (max-width: $mobile-420) {
-    left: 79vw;
-    top: 10px;
+    left: 82vw;
+    top: 14px;
   }
   .hamburger--wrapper {
     .hamburger-menu--wrapper {
@@ -185,9 +185,9 @@ $mobile-420: 420px;
 				border-radius: 30px;
         cursor: pointer;
         @media screen and (max-width: $mobile-420){
-          width: 45px;
-          height: 45px;
-          padding: 11px;
+          width: 43px;
+          height: 43px;
+          padding: 10px;
         }
       }
       .line {
@@ -206,6 +206,10 @@ $mobile-420: 420px;
         }
         &:nth-last-child(2) {
           transform-origin: 0% 100%;
+        }
+        @media screen and (max-width: $mobile-420){
+          height: 3px;
+          margin-bottom: 2px;
         }
       }
       .hamburger--list {
